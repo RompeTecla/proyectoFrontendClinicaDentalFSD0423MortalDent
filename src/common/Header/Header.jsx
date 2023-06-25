@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Container, Nav } from 'bootstrap';
 
-const CustomNavbar = () => {
+export const CustomNavbar = () => {
     return (
       <Navbar bg="light" expand="lg">
         <Container>
@@ -20,5 +20,5 @@ const CustomNavbar = () => {
     );
   };
   
-  export default CustomNavbar;
+ 
   
