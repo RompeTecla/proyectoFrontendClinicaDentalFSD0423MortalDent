@@ -12,7 +12,7 @@ export const NavBar = () => {
           <div className="link-title">MORTALDENT</div>
         </div>
         <>
-          <div className="nav-init custom-nav-init">
+          <div className="nav-init">
             <Navigator ruta={"Inicio"} destino={"/"} />
             <Navigator ruta={"Tratamientos"} destino={"/treatments"} />
             <Navigator ruta={"Registro"} destino={"/register"} />
