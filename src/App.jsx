@@ -4,7 +4,7 @@ import { NavBar } from './common/Navbar/Navbar'
 import { Home } from './pages/Home/Home'
 
 
-function App() {
+export const App = () => {
 
   return (
     <>
