@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbarHome{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.allHome {
+  margin-top: 5rem;
+  /* background-image: url(../../assets/img/backgroundAll.jfif); */
+}
+
+.offerContainerHome {
+  width: 100%;
+  height: 25rem;
+  background-color: rgba(119, 223, 255, 0.377);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px 7px rgba(255, 255, 255, 0.75) inset;
+}
+.offer {
+  width: 25rem;
+  /* margin-left: 5rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.until{
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+  color: rgb(255, 146, 57);
+  font-size: 1.4rem;
+  justify-content: center;
+  align-items: center;
+}
+.offerPrice {
+  font-size: 5rem;
+  font-weight: 900;
+  font-family: "Exo", sans-serif;
+  color: rgba(140, 83, 206, 0.931);
+  margin-top: -2rem;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+.ofDiscount {
+  color: rgba(255, 146, 57);
+  font-size: 1.7rem;
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+}
+.ortpImplantOffer {
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+  color: rgba(140, 83, 206, 0.931);
+  font-size: 1.4rem;
+  justify-content: center;
+  align-items: center;
+  
+}
+.dateButton {
+  margin-top: 0.5rem;
+  gap: 1rem;
+  display: flex;
+}
+.dateFree {
+  font-family: "Exo", sans-serif;
+  font-weight: 500;
+  background-color: rgb(3, 45, 101);
+  border-color: rgb(3, 45, 101);
+}
+.moreInfo {
+  color: rgb(26, 101, 199);
+  font-family: "Exo", sans-serif;
+  background-color: rgb(228, 228, 228);
+}
+.picturePeople {
+  width: 41rem;
+  justify-content: center;
+  align-items: center;
+}
+.clientSatisfaction01 {
+  height: 100%;
+  width: 100%;
+}
+.aboutClinicHomeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.clinicHomeImgContainer {
+  display: flex;
+  z-index: 1;
+  position: relative;
+}
+.clientSatisfaction02{
+  border-radius: 2rem 0rem 0rem 2rem;
+}
+.textClinicAdContainer {
+  width: 32rem;
+  background-color: rgb(3, 45, 101);
+  height: 15rem;
+  z-index: -1;
+  position: relative;
+  margin-left: -4rem;
+  border-radius: 2rem;
+}
+.clinicForYou {
+  color: white;
+  font-size: 1.7rem;
+  margin-left: 9.5rem;
+  font-family: "Exo", sans-serif;
+  position: absolute;
+  margin-top: 1rem;
+}
+.trustedClinic {
+  color: white;
+  margin-left: 6rem;
+  font-family: "Exo", sans-serif;
+  position: absolute;
+  margin-top: 4.3rem;
+}
+.adButton {
+  font-family: "Exo", sans-serif;
+  background-color: white;
+  color: rgb(3, 45, 101);
+  border-color: white;
+  margin-top: 10rem;
+  margin-left: 5rem;
+}
+.ourHistory{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
+  font-family: 'Exo', sans-serif;
+}
+.ourPrestige{
+  font-size: 1.1rem;
+  color: rgb(64, 64, 64);
+  font-weight: 600;
+}
+.ourTrust{
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: rgb(3, 45, 101);
+  margin-top: 1.2rem;
+}
+.allOurData{
+  display: flex;
+  gap: 8rem;
+  margin-top: 2rem;
+}
+.dataCol{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dataNum{
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: rgb(26, 101, 199)
+  
+}
+.dataInfo{
+  color: rgb(64, 64, 64);
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ourServices{
+  width: 60%;
+  margin: 0;
+  display: flex;
+  position: relative;
+  left: 15.2%;
+  flex-direction: column;
+  margin-top: 7rem;
+}
+.imgLogo{
+  width: 4.2rem;
+  margin-top: 3rem;
+}
+.lastRowServices{
+  margin-bottom: 4rem;
+}
+
+
+@media (max-width: 1600px) {
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+  .offerContainerHome {
+    height: 58rem;
+  }
+  .offerColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .offerPrice {
+    margin-top: 2rem;
+  }
+  .aboutClinicHomeContainer {
+    display: none;
+  }
+  .allOurData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .offerContainerHome {
+    height: 28rem;
+  }
+  .picturePeople {
+    display: none;
+  }
+  .offer {
+    margin-top: 0;
+  }
+  .offerPrice {
+    font-size: 4.5rem;
+  }
+  .ortpImplantOffer {
+    font-size: 1.3rem;
+    width: 20rem;
+  }
+  .ourPrestige {
+    font-size: 0.9rem;
+  }
+  .ourTrust {
+    font-size: 1.3rem;
+  }
+}

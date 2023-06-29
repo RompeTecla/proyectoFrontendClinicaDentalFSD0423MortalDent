@@ -1,11 +1,11 @@
 import React from "react";
 import "./Footer.css";
-import { Button, Col, Container, Row } from "react-bootstrap";
+// import { Button, Col, Container, Row } from "react-bootstrap";
 
 export const Footer = () => {
   return (
-    <div className="all-footer">
-      <Container>
+    <div className="mortaldent-footer">
+      {/* <Container>
         <Row>
           <Col className="col-footer">
             <div>
@@ -51,7 +51,7 @@ export const Footer = () => {
       </Container>
       <div className="separator-container">
         <hr className="separator" />
-      </div>
+      </div> */}
       <div className="privacy-all">
         <div className="privacy-container">
           <p className="privacy">Términos legales</p>
