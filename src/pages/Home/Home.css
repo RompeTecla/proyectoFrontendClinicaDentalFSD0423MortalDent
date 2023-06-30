@@ -10,7 +10,6 @@
 }
 .allHome {
   margin-top: 5rem;
-  /* background-image: url(../../assets/img/backgroundAll.jfif); */
 }
 
 .offerContainerHome {
@@ -24,7 +23,6 @@
 }
 .offer {
   width: 25rem;
-  /* margin-left: 5rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,15 +176,21 @@
   align-items: center;
 }
 .ourServices{
-  width: 60%;
+  width: 100%;
   margin: 0;
   display: flex;
   position: relative;
-  left: 15.2%;
   flex-direction: column;
   margin-top: 7rem;
 }
+.cardServices{
+  display: flex;
+  justify-content: center;
+}
 .imgLogo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 4.2rem;
   margin-top: 3rem;
 }
@@ -194,6 +198,7 @@
   margin-bottom: 4rem;
 }
 
+/* MEDIA QUERIES DE HOME */
 
 @media (max-width: 1600px) {
 }

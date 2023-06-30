@@ -9,7 +9,7 @@ export const CardComponent = ({ image, showButton, title, text }) => {
             <img className='imgLogo' src={image} alt=""/>
             <div className='title-treatment-1'>{title}</div>
             <p className='text-treatment-1'>{text}</p>
-            {showButton && <Button className='appointment-btn'>Saber más <i className="bi bi-chevron-right"></i></Button>}
+            {showButton && <Button className='appointment-btn'>Información <i className="bi bi-chevron-right"></i></Button>}
         </div>
     </div>
   );

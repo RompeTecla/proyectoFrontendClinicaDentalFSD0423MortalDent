@@ -14,22 +14,23 @@ body {
   display: flex;
   gap: 50rem;
   align-items: center;
+  
 }
 .nav-init {
   font-family: "Exo", sans-serif;
   font-size: 1.1rem;
   color: rgb(119, 223, 255);
-  filter: drop-shadow(0px 0px 1px #ffffff);
   display: flex;
   gap: 2rem;
   font-weight: 600;
   cursor: pointer;
 }
-.link-title {
+.navbarTitle {
   font-family: "Exo", sans-serif;
   font-size: 3rem;
   color: rgb(119, 223, 255);
   filter: drop-shadow(0px 0px 2px #ffffff);
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
 /* MEDIA QUERIES PARA LA NAVBAR */

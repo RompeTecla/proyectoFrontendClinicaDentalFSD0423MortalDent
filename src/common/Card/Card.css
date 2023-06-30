@@ -1,19 +1,16 @@
 .cont-treatment-1{
-    margin-left: 2rem;
     width: 23rem;
     height: 23rem;
     box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.363);
     transition: all 0.3s ease-in-out;
     border-radius: 1rem;
-
 }
-
 .cont-all{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     position: relative;
-    left: 7%;
-    top: -5%;
 }
 
 .imgLogo{
@@ -59,7 +56,6 @@
     }
     .title-treatment-1{
         font-size: 1.2rem;
-        
         width: 14rem;
     }
     .text-treatment-1{

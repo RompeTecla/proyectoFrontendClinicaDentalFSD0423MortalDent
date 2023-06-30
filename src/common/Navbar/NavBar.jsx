@@ -9,7 +9,7 @@ export const NavBar = () => {
     <Navbar className="all-nav">
       <div className="row-nav">
         <div className="mortaldent">
-          <div className="link-title">MORTALDENT</div>
+          <div className="navbarTitle">MORTALDENT</div>
         </div>
         <>
           <div className="nav-init">
