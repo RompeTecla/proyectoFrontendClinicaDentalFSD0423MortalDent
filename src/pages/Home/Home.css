@@ -208,6 +208,7 @@
 
 }
 @media (max-width: 992px) {
+  
   .offerContainerHome {
     height: 58rem;
   }
@@ -252,5 +253,19 @@
   }
   .ourTrust {
     font-size: 1.3rem;
+  }
+  .all-nav{
+    overflow-y: hidden;
+    height: 13rem;
+  }.nav-init {
+    margin-top: -1rem;
+    gap: 0;
+  }
+  .navbarTitle {
+    padding-top: 2rem;
+  }
+  .row-nav{
+    gap: 2rem;
+  
   }
 }
