@@ -1,29 +1,16 @@
-.mortaldent-footer {
-  padding-top: 2rem;
-  /* height: auto; */
+.mortaldentFooter {
   background-color: rgb(119, 223, 255);
-  box-shadow: 0 2px 8px rgb(119, 223, 255);
-  /* height: 10rem;   */
+  box-shadow: 0px -5px 10px 0px rgb(119, 223, 255);
   width: 100%;
   font-size: 200;
 }
-.separator-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
-}
-.separator {
-  height: 1rem;
-  color: rgba(0, 0, 0, 0.71);
-  width: 67.3%;
-}
-.privacy-all {
+.privacyAll {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.privacy-container {
+.privacyContainer {
   display: flex;
   gap: 4rem;
   justify-content: center;
@@ -31,38 +18,42 @@
   margin-top: 1rem;
 }
 .privacy {
-  color: rgba(0, 0, 0, 0.71);
+  color: rgb(177, 81, 3);
   font-size: 1rem;
   font-family: "Exo", sans-serif;
+  text-shadow: 1px 1px 5px rgb(255, 255, 255);
 }
-.reserved-container {
+.reservedContainer {
+  margin-top: 1rem;
   margin-left: 13.5rem;
 }
 .reserved {
   font-family: "Exo", sans-serif;
-  color: rgba(0, 0, 0, 0.74);
-  font-size: 1rem;
+  color: rgb(177, 81, 3);
+  font-size: 0.8rem;
+  text-shadow: 1px 1px 5px rgb(255, 255, 255);
 }
-.content-advisor {
+.contentAdvisor {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 .advisor {
-  color: rgba(0, 0, 0, 0.71);
-  font-size: 1rem;
+  color: rgb(177, 81, 3);
+  font-size: 0.7rem;
   font-family: "Exo", sans-serif;
-  text-align: left;
-  width: 79rem;
-  margin-bottom: 3rem;
+  text-align: center;
+  width: 83rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 5px rgb(255, 255, 255);
 }
 
 /* MEDIA QUERIES PARA EL FOOTER */
 
 @media (max-width: 1400px) {
-  .privacy-container {
+  .privacyContainer {
     gap: 0.8rem;
   }
   .advisor {
@@ -70,7 +61,7 @@
   }
 }
 @media (max-width: 1200px) {
-  .reserved-container {
+  .reservedContainer {
     margin-left: 7rem;
   }
   .advisor {
@@ -82,11 +73,11 @@
   .treatment-footer {
     gap: 4rem;
   }
-  .privacy-all {
+  .privacyAll {
     display: flex;
     flex-direction: column;
   }
-  .reserved-container {
+  .reservedContainer {
     margin-left: 0;
     margin-top: 1rem;
   }
@@ -114,7 +105,7 @@
   }
 }
 @media (max-width: 576px) {
-  .privacy-container {
+  .privacyContainer {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;

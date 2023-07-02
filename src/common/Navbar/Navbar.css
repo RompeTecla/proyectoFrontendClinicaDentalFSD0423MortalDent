@@ -2,21 +2,22 @@ body {
   margin: 0;
   padding: 0;
 }
-.all-nav {
+.allNav {
   background-color: rgb(255, 255, 255);
   width: 100%;
-  box-shadow: 0 2px 8px rgb(0, 0, 0);
+  box-shadow: 0 2px 20px rgb(119, 223, 255);
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: solid 0.2rem rgba(119, 223, 255, 0.616);
 }
-.row-nav {
+.rowNav {
   display: flex;
   gap: 50rem;
   align-items: center;
   
 }
-.nav-init {
+.navMenu {
   font-family: "Exo", sans-serif;
   font-size: 1.1rem;
   color: rgb(119, 223, 255);
@@ -36,31 +37,31 @@ body {
 /* MEDIA QUERIES PARA LA NAVBAR */
 
 @media (max-width: 1200px) {
-  .row-nav {
+  .rowNav {
     gap: 15rem;
   }
 }
 @media (max-width: 1000px) {
-  .row-nav {
+  .rowNav {
     gap: 3.5rem;
   }
 }
 @media (max-width: 854px) {
-  .row-nav {
+  .rowNav {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
   }
 }
 @media (max-width: 772px) {
-  .row-nav {
+  .rowNav {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
   }
 }
 @media (max-width: 576px) {
-  .nav-init {
+  .navMenu {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;

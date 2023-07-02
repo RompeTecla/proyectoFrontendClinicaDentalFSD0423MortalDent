@@ -1,16 +1,17 @@
-import './App.css';
-import { Footer } from './common/Footer/Footer';
-import { NavBar } from './common/Navbar/Navbar';
+import React from 'react'
+import { Route, Routes } from 'react-router-dom';
 import { Home } from './pages/Home/Home';
+import './App.css';
 
 
 export const App = () => {
-
   return (
     <>
-      <Home />
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
     </>
   )
 }
 
-export default App
+export default App;

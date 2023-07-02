@@ -4,7 +4,7 @@ import "./Footer.css";
 
 export const Footer = () => {
   return (
-    <div className="mortaldent-footer">
+    <div className="mortaldentFooter">
       {/* <Container>
         <Row>
           <Col className="col-footer">
@@ -52,21 +52,21 @@ export const Footer = () => {
       <div className="separator-container">
         <hr className="separator" />
       </div> */}
-      <div className="privacy-all">
-        <div className="privacy-container">
+      <div className="privacyAll">
+        <div className="privacyContainer">
           <p className="privacy">Términos legales</p>
           <p className="privacy">Pólitica de privacidad</p>
           <p className="privacy">Pólitica de cookies</p>
           <p className="privacy">Mapa web</p>
           <p className="privacy">Accesibilidad</p>
         </div>
-        <div className="reserved-container">
+        <div className="reservedContainer">
           <p className="reserved">
             © Mortaldent. Todos los derechos reservados
           </p>
         </div>
       </div>
-      <div className="content-advisor">
+      <div className="contentAdvisor">
         <p className="advisor">
           El contenido sobre salud bucodental de la web y blog de Mortaldent
           está revisado por nuestra junta de revisión médica y nuestro equipo de

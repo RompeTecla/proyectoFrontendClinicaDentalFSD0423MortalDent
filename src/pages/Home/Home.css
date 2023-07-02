@@ -273,17 +273,17 @@
   .ourTrust {
     font-size: 1.3rem;
   }
-  .all-nav{
+  .allNav{
     overflow-y: hidden;
     height: 13rem;
-  }.nav-init {
+  }.navMenu {
     margin-top: -1rem;
     gap: 0;
   }
   .navbarTitle {
     padding-top: 2rem;
   }
-  .row-nav{
+  .rowNav{
     gap: 2rem;
   
   }

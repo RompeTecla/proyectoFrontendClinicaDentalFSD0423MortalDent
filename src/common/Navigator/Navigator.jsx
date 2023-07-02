@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
  
 export const Navigator = ({ruta, destino}) => {
 
-    //Instancio useNavigate dentro de la constante navigate para poder desplazarme
+    //Instancio useNavigate dentro de la constante navigate para poder desplazarme con router-dom
 
     const navigate = useNavigate();
 

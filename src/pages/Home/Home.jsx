@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { CardComponent } from "../../common/Card/Card";
-import { NavBar } from "../../common/Navbar/Navbar";
+import { NavBar } from "../../common/Navbar/NavBar";
 import { Footer } from "../../common/Footer/Footer";
 
 import imgClientSatisfaction01 from "../../assets/img/satisfaccion02.jpg";
