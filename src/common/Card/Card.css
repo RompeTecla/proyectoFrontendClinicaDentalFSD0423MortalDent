@@ -1,11 +1,8 @@
-.cont-treatment-1{
+.containerServices{
     width: 23rem;
     height: 23rem;
-    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.363);
-    transition: all 0.3s ease-in-out;
-    border-radius: 1rem;
 }
-.cont-all{
+.containerAllServices{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,21 +10,23 @@
     position: relative;
 }
 
-.imgLogo{
+.imgLogoServices{
+    filter: drop-shadow(0px 0px 15px rgba(140, 83, 206, 0.931));
     width: 4.2rem;
     margin-top: 3rem;
 }
 
-.title-treatment-1{
-    font-size: 1.5rem;
+.titleServices{
+    font-size: 1.8rem;
     font-weight: 600;
-    color: rgb(3, 45, 101);
+    color: rgb(255, 162, 75);
+    text-shadow: rgba(140, 83, 206, 0.931) 0px 0 12px;
     margin-top: 1rem;
     margin-bottom: 1rem;
     width: 18rem;
 }
 
-.text-treatment-1{
+.textInfoServices{
     color: rgb(64, 64, 64);
     font-weight: 500;
     margin-bottom: 1.2rem;
@@ -35,30 +34,38 @@
     font-size: 0.9rem;
 }
 
-.arrow{
+.arrowBtnServices{
     font-size: 0.8rem;
     margin-left: 0.5rem;
 }
 
-.appointment-btn{
+.servicesBtn{
     font-family: 'Exo', sans-serif;
     font-weight: 500;
-    background-color: rgb(3, 45, 101);
-    border-color: rgb(3, 45, 101);
+    background-color: rgba(255, 146, 57);
+    border-color: rgba(255, 146, 57);
     width: 8.5rem;
+    transition: 0.5s;
+}
+.servicesBtn:hover{
+    background-color: rgb(255, 193, 143);
+    border-color: rgba(140, 83, 206, 0.931);
+    color: rgba(140, 83, 206, 0.931);
+    transition: 0.5s;
+    font-weight: 900;
 }
 
 /* MEDIA QUERIES DEL COMPONENTE "CARD" */
 
 @media(max-width:450px){
-    .cont-treatment-1{
+    .containerServices{
         width: 18rem;
     }
-    .title-treatment-1{
+    .titleServices{
         font-size: 1.2rem;
         width: 14rem;
     }
-    .text-treatment-1{
+    .textInfoServices{
         width: 15rem;
         font-size: 0.85rem;
     }

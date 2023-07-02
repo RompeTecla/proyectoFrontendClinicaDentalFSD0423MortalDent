@@ -7,11 +7,12 @@ import { Footer } from "../../common/Footer/Footer";
 
 import imgClientSatisfaction01 from "../../assets/img/satisfaccion02.jpg";
 import imgClientSatisfaction02 from "../../assets/img/satisfaccion01.jpg";
-import implantImage from "../../assets/img/implantologiadef.jpg";
-import dentalProtesis from "../../assets/img/protesis-dentales.jpg";
-import orthodontic from "../../assets/img/ortodoncia.jpg";
-import odontology from "../../assets/img/odontologia-general.jpg";
-import smileDesign from "../../assets/img/disenosonrisa.jpg";
+import implantImage from "../../assets/img/implantologiadef.png";
+import dentalProtesis from "../../assets/img/protesis-dentales.png";
+import orthodontic from "../../assets/img/ortodoncia.png";
+import odontology from "../../assets/img/odontologia-general.png";
+import smileDesign from "../../assets/img/disenosonrisa.png";
+import maxiloElevation from "../../assets/img/elevaciones-maxilares.png";
 
 export const Home = () => {
   return (
@@ -73,7 +74,7 @@ export const Home = () => {
               Mortaldent es una clínica dental inestable y poco consolidada que
               cuenta con un centro nunca cerca de ti para ayudarte.
             </p>
-            <Button className="adButton">¿Quieres conocernos?</Button>
+            <Button className="adBtn">¿Quieres conocernos?</Button>
           </div>
         </div>
         <div className="ourHistory">
@@ -106,7 +107,7 @@ export const Home = () => {
           <Row className="flex-row d-flex ">
             <Col md={6} lg={6} xl={4} xxl={4} className="cardServices">
               <CardComponent
-                image={implantImage} className="imgLogo"
+                image={implantImage} className="imgLogoServices"
                 showButton={true}
                 title="Implantología"
                 text="Utilizamos implantes europeos de primera calidad, que tienen una tasa de éxito del 99% y que no se distinguen del resto de tus dientes."
@@ -114,7 +115,7 @@ export const Home = () => {
             </Col>
             <Col md={6} lg={6} xl={4} xxl={4} className="cardServices">
               <CardComponent
-                image={dentalProtesis} className="imgLogo"
+                image={dentalProtesis} className="imgLogoServices"
                 showButton={true}
                 title="Prótesis dentales"
                 text="Colocamos prótesis que son muy naturales, no se notan, duran hasta 15 años y te permiten volver a sonreír y comer con normalidad."
@@ -122,7 +123,7 @@ export const Home = () => {
             </Col>
             <Col md={6} lg={6} xl={4} xxl={4} className="cardServices">
               <CardComponent
-                image={orthodontic} className="imgLogo"
+                image={orthodontic} className="imgLogoServices"
                 showButton={true}
                 title="Ortodoncia"
                 text="Realizamos tratamientos de ortodoncia tanto con alineadores transparentes como con brackets (metálicos y de zafiro)."
@@ -139,7 +140,7 @@ export const Home = () => {
               className="cardServices lastRowServices"
             >
               <CardComponent
-                image={odontology} className="imgLogo"
+                image={odontology} className="imgLogoServices"
                 showButton={true}
                 title="Odontología General"
                 text="Eliminamos las caries y las enfermedades de las encías (periodontitis o piorrea): empastes, endodoncias, curetajes..."
@@ -147,7 +148,7 @@ export const Home = () => {
             </Col>
             <Col md={6} lg={6} xl={4} xxl={4} className="cardServices">
               <CardComponent
-                image={smileDesign} className="imgLogo"
+                image={smileDesign} className="imgLogoServices"
                 showButton={true}
                 title="Estética dental"
                 text="Llevamos a cabo tratamientos para mejorar y rejuvenecer la apariencia de la sonrisa: blanqueamiento y carillas. Varios descuentos disponibles."
@@ -155,7 +156,7 @@ export const Home = () => {
             </Col>
             <Col md={6} lg={6} xl={4} xxl={4} className="cardServices">
               <CardComponent
-                image={implantImage} className="imgLogo"
+                image={maxiloElevation} className="imgLogoServices"
                 showButton={true}
                 title="Elevaciones maxilares"
                 text="Utilizamos implantes europeos de primera calidad, que tienen una tasa de éxito del 99% y que no se distinguen del resto de tus dientes."

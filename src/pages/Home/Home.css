@@ -15,7 +15,7 @@
 .offerContainerHome {
   width: 100%;
   height: 25rem;
-  background-color: rgba(119, 223, 255, 0.377);
+  background-color: rgba(119, 223, 255, 0.514);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,13 +71,31 @@
 .dateFree {
   font-family: "Exo", sans-serif;
   font-weight: 500;
-  background-color: rgb(3, 45, 101);
-  border-color: rgb(3, 45, 101);
+  background-color: rgba(140, 83, 206, 0.931);
+  border-color: rgba(140, 83, 206, 0.931);
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.dateFree:hover {
+  background-color: rgba(255, 146, 57);
+  border-color: rgba(255, 146, 57);
+  transition: 0.5s;
 }
 .moreInfo {
-  color: rgb(26, 101, 199);
+  border-color: rgba(140, 83, 206, 0.931);
+  color: rgba(140, 83, 206, 0.931);
   font-family: "Exo", sans-serif;
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+  font-weight: 900;
+}
+.moreInfo:hover {
+  border-color: rgba(140, 83, 206, 0.931);
+  color: rgba(255, 255, 255, 0.931);
+  font-family: "Exo", sans-serif;
+  background-color: rgba(140, 83, 206, 0.931);
+  transition: 0.5s;
+  font-weight: 100;
 }
 .picturePeople {
   width: 41rem;
@@ -104,7 +122,7 @@
 }
 .textClinicAdContainer {
   width: 32rem;
-  background-color: rgb(3, 45, 101);
+  background-color: rgba(119, 223, 255, 0.514);
   height: 15rem;
   z-index: -1;
   position: relative;
@@ -112,7 +130,7 @@
   border-radius: 2rem;
 }
 .clinicForYou {
-  color: white;
+  color: rgba(140, 83, 206, 0.931);
   font-size: 1.7rem;
   margin-left: 9.5rem;
   font-family: "Exo", sans-serif;
@@ -120,19 +138,20 @@
   margin-top: 1rem;
 }
 .trustedClinic {
-  color: white;
+  color: rgba(140, 83, 206, 0.931);
   margin-left: 6rem;
   font-family: "Exo", sans-serif;
   position: absolute;
   margin-top: 4.3rem;
 }
-.adButton {
+.adBtn {
   font-family: "Exo", sans-serif;
-  background-color: white;
-  color: rgb(3, 45, 101);
-  border-color: white;
+  background-color: rgba(140, 83, 206, 0.931);
+  color: rgb(255, 255, 255);
+  border-color: rgba(140, 83, 206, 0.931);
   margin-top: 10rem;
   margin-left: 5rem;
+  cursor: pointer;
 }
 .ourHistory{
   display: flex;
@@ -140,16 +159,17 @@
   align-items: center;
   margin-top: 6rem;
   font-family: 'Exo', sans-serif;
+  color: rgb(255, 146, 57);
 }
 .ourPrestige{
   font-size: 1.1rem;
-  color: rgb(64, 64, 64);
+  color: rgba(140, 83, 206, 0.931);
   font-weight: 600;
 }
 .ourTrust{
   font-size: 1.9rem;
   font-weight: 600;
-  color: rgb(3, 45, 101);
+  color: rgb(255, 146, 57);
   margin-top: 1.2rem;
 }
 .allOurData{
@@ -165,11 +185,10 @@
 .dataNum{
   font-size: 2.2rem;
   font-weight: 600;
-  color: rgb(26, 101, 199)
-  
+  color: rgba(140, 83, 206, 0.931);
 }
 .dataInfo{
-  color: rgb(64, 64, 64);
+  color: rgb(20, 0, 110);
   font-weight: 600;
   display: flex;
   justify-content: center;
@@ -187,7 +206,7 @@
   display: flex;
   justify-content: center;
 }
-.imgLogo{
+.imgLogoServices{
   display: flex;
   align-items: center;
   justify-content: center;
