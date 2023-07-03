@@ -142,6 +142,8 @@ export const Register = () => {
   return (
     <>
       <NavBar />
+      <div className="allContainer">
+      <div className="allContainerRegister">
       <div className="containerIcon">
         <div className="bi bi-person-workspace iconLogin"></div>
       </div>
@@ -276,7 +278,7 @@ export const Register = () => {
                 blurFunction={(e) => checkError(e)}
               />
             </Col>
-            <div className="container-btn">
+            <div className="containerBtn">
               <div
                 type="submit"
                 className={
@@ -298,6 +300,8 @@ export const Register = () => {
           </Row>
         </Container>
       )}
+      </div>
+      </div>
       <Footer />
     </>
   );

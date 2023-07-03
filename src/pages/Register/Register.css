@@ -1,9 +1,28 @@
+.allContainer{
+    height: 33.5rem;
+}
+.allContainerRegister{
+    /* padding-top: 5rem; */
+    box-sizing: border-box;
+    border: rgba(140, 83, 206, 0.931) solid 0.2rem;
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 2rem;
+    width: 45rem;
+    height: 28rem;
+}
 .containerRegister {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: auto;
+    width: auto;
+}
+.iconLogin {
+    font-size: 4rem;
+    color: rgba(140, 83, 206, 0.931) 
+    !important;
 }
 .inputBasicDesign {
     margin: 0.2rem;
@@ -16,7 +35,7 @@
 .containerIcon{
     display: flex;
     justify-content: center;
-    margin-bottom: 4rem;
+    /* margin-top: 2rem; */
 }
 .iconLogin{
     font-size: 4rem;
@@ -80,15 +99,15 @@
     justify-content: center;
     align-items: center;
 }
-.container-btn{
+.containerBtn{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 3.5rem;
+    padding-bottom: 1rem;
 }
 footer{
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: flex-end; */
 }
 @media(max-width:992px){
     .rowInput{
@@ -98,5 +117,8 @@ footer{
 @media(max-width:500px){
     .rowInput{
         width: 20rem;
+    }
+    .allContainerRegister{
+        width: auto;
     }
 }
