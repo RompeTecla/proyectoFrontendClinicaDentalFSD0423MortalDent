@@ -1,22 +1,21 @@
-import React, { useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import React, { useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import './Register.css'
+import "./Register.css";
 import { Footer } from "../../common/Footer/Footer";
 import { NavBar } from "../../common/Navbar/NavBar";
 import { useEffect } from "react";
 import { InputText } from "../../common/InputText/InputText";
 import { validate } from "../../services/useful";
-import { registerUser } from "../../services/apiCalls";
+// import { registerUser } from "../../services/apiCalls";
 
 export const Register = () => {
-
   const navigate = useNavigate();
 
-////////////////////////////////////////////////// H O O K S //////////////////////////////////////////////////
+  ////////////////////////////////////////////////// H O O K S //////////////////////////////////////////////////
 
   // Comprobacion inicial de Hooks con campo vacío.
-  const [credenciales, setCredenciales] = useState({
+  const [credentials, setCredentials] = useState({
     name: "",
     surname: "",
     email: "",
@@ -25,23 +24,23 @@ export const Register = () => {
     phone: "",
     address: "",
     gender: "",
-    postcode: ""
+    postcode: "",
   });
 
-  const [valiCredenciales, setValiCredenciales] = useState({
+  const [valiCredentials, setValiCredentials] = useState({
     nameVali: false,
     surnameVali: false,
     emailVali: false,
-    passwordVali:false,
-    usernameVali:false,
+    passwordVali: false,
+    usernameVali: false,
     addressVali: false,
     phoneVali: false,
     genderVali: false,
     postcodeVali: false,
-  })
+  });
 
   // Con este HOOK se recogen los errores que inicialmente se mantiene en string vacío.
-  const [credencialesError, setCredencialesError] = useState({
+  const [credentialsError, setCredentialsError] = useState({
     nameError: "",
     passwordError: "",
     surnameError: "",
@@ -55,102 +54,251 @@ export const Register = () => {
 
   const [registerAct, setRegisterAct] = useState(false);
 
-  //////////////////////////////////////////////// H A N D L E R S ////////////////////////////////////////////////
+  /////////////////////////////////////////// H A N D L E R S /////////////////////////////////////////////
 
-  //inputHandler se maneja en el input en el que introducimos cada credencial del usuario, y el diferencia cada una de las credenciales
+  // inputHandler se maneja en el input en el que introducimos cada credencial del usuario, y el diferencia cada una de las credentials
   const inputHandler = (e) => {
-
-    setCredenciales((prevState) => ({
+    setCredentials((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
-      //Con el ...spread... se hace una copia del estado inicial del componente para no tener que mutar el original,
-      //posteriormente, mediante la técnica de diccionario de JS, asignamos el valor del input que esté escribiendose
-      //EN ESE MOMENTO a la parte correspondiente del Hook.
+      // Con el ...spread... se hace una copia del estado inicial del componente para no tener que mutar el original,
+      // a continuacion se asigna el valor del input que esté escribiendose a la parte correspondiente del Hook.
     }));
   };
 
-  //USEEFFECT
+  ///////////////////////////////////// U S E - E F F E C T /////////////////////////////////////////
 
-  //Funciones de ciclo de vida del componente, conocidas como useEffect
-
-  // 3 - Ejecutamos los useEffect
+  // Funciones de ciclo de vida del componente.
+  // Ejecucion de los useEffect
   const [welcome, setWelcome] = useState("");
-
-  //Este tipo de useEffect siempre se ejecuta cuando se actualice cualquier hook.....
+  //Este useEffect siempre se ejecuta cuando se actualice cualquier hook.....
   useEffect(() => {
- 
-
-    //Recorremos el primer for in para ver si hay errores en las credenciales....
-    for(let error in credencialesError){
-      if(credencialesError[error] !== ""){
+    //Recorremos el primer for in para ver si hay errores en las credenciales.
+    for (let error in credentialsError) {
+      if (credentialsError[error] !== "") {
         setRegisterAct(false);
         return;
       }
     }
 
-    //Recorremos las credenciales con otro for in para comprobar en este caso si algún campo se ha dejado por rellenar...
-    for(let vacio in credenciales){
-      if(credenciales[vacio] === ""){
+    // Con otro "for in" comprobamos que no falte ningun campo por rellenar.
+    for (let empty in credentials) {
+      if (credentials[empty] === "") {
         setRegisterAct(false);
         return;
       }
     }
 
-    //El último cortafuegos será un for in que recorrerá el hook valiCredenciales que mirará si todas las credenciales no sólo
-    //están rellenas, sino que también han sido validadas
-    for(let validated in valiCredenciales){
-      if(valiCredenciales[validated] === false){
+    // Y con este último "for in" recorrerá el HOOK "valiCredentials" que revisa si todas los campos están rellenos y validados.
+    for (let validated in valiCredentials) {
+      if (valiCredentials[validated] === false) {
         setRegisterAct(false);
         return;
       }
     }
-    //si llegamos a este punto es porque no hemos encontrado ningún error en el for in que recorre el hook de errores
+    // Si supera los "for in" y no hay errores, llegará aquí. "setSegisterAct" será "true".
     setRegisterAct(true);
   });
 
-  //FUNCIONES
+  ///////////////////////////////////////// F U N C I O N E S ////////////////////////////////////////
   //Funcion de validacion
 
   const checkError = (e) => {
-
     let error = "";
 
-    let checked = validate(
-      e.target.name,
-      e.target.value,
-      e.target.required
-    );
+    let checked = validate(e.target.name, e.target.value, e.target.required);
 
     error = checked.message;
-    
-    //Aqui seteamos el hook de las validaciones
-    console.log("asdfasdf",valiCredenciales)
 
-    setValiCredenciales((prevState) => ({
+    //Aqui seteamos el hook de las validaciones
+    console.log("Validacion de credentials: ", valiCredentials);
+
+    setValiCredentials((prevState) => ({
       ...prevState,
       [e.target.name + "Vali"]: checked.validated,
     }));
 
     //Aqui seteamos el hook de los errores
 
-    setCredencialesError((prevState) => ({
+    setCredentialsError((prevState) => ({
       ...prevState,
       [e.target.name + "Error"]: error,
     }));
   };
 
-  const userRegister = () => {
-    registerUser(credenciales)
-    console.log(credenciales)
+//   const userRegister = () => {
+//     registerUser(credentials);
+//     console.log("Credenciales: " + credentials);
 
-    setWelcome(`Gracias por confiar en nosotros`);
+//     setWelcome(`Bienvenida/o y grácias por confiar en nuestros profesionales.`);
 
-                //Redirección a Home
+//     //Redirección a Home
 
-                setTimeout(() => {
-                  navigate("/login");
-                }, 2000);
-                 
-  };
+//     setTimeout(() => {
+//       navigate("/home");
+//     }, 2500);
+//   };
 
-  
+  return (
+    <>
+      <NavBar />
+      <div className="containerIcon">
+        <div className="bi bi-person-workspace iconLogin"></div>
+      </div>
+      {welcome !== "" ? (
+        <div className="date-confirm">{welcome}</div>
+      ) : (
+        <Container className="containerRegister">
+          <Row className="rowInput">
+            <Col md={12} lg={6} className="containerInputs">
+              <InputText
+                className={
+                  credentialsError.emailError === ""
+                    ? "inputBasicDesign"
+                    : "inputBasicDesign inputErrorDesign"
+                }
+                type={"email"}
+                name={"email"}
+                placeholder={"Email"}
+                required={true}
+                changeFunction={(e) => inputHandler(e)}
+                blurFunction={(e) => checkError(e)}
+              />
+              <div>{credentialsError.emailError}</div>
+
+              <InputText
+                className={
+                  credentialsError.passwordError === ""
+                    ? "inputBasicDesign" : "inputBasicDesign inputErrorDesign"
+                }
+                type={"password"}
+                name={"password"}
+                placeholder={"Contraseña"}
+                required={true}
+                changeFunction={(e) => inputHandler(e)}
+                blurFunction={(e) => checkError(e)}
+              />
+              <div>{credentialsError.passwordError}</div>
+
+              <InputText
+                className={
+                  credentialsError.usernameError === ""
+                    ? "inputBasicDesign"
+                    : "inputBasicDesign inputErrorDesign"
+                }
+                type={"text"}
+                name={"username"}
+                placeholder={"Nombre de usuario"}
+                required={true}
+                changeFunction={(e) => inputHandler(e)}
+                blurFunction={(e) => checkError(e)}
+              />
+
+              <InputText
+                className={
+                  credentialsError.nameError === ""
+                    ? "inputBasicDesign"
+                    : "inputBasicDesign inputErrorDesign"
+                }
+                type={"text"}
+                name={"name"}
+                placeholder={"Nombre"}
+                required={true}
+                changeFunction={(e) => inputHandler(e)}
+                blurFunction={(e) => checkError(e)}
+              />
+
+              <InputText
+                className={
+                  credentialsError.surnameError === ""
+                    ? "inputBasicDesign"
+                    : "inputBasicDesign inputErrorDesign"
+                }
+                type={"text"}
+                name={"surname"}
+                placeholder={"Apellido"}
+                required={true}
+                changeFunction={(e) => inputHandler(e)}
+                blurFunction={(e) => checkError(e)}
+              />
+            </Col>
+            <Col md={12} lg={6} className="containerInputs cont-inp-2">
+              <InputText
+                className={
+                  credentialsError.addressError === ""
+                    ? "inputBasicDesign"
+                    : "inputBasicDesign inputErrorDesign"
+                }
+                type={"text"}
+                name={"address"}
+                placeholder={"Dirección"}
+                required={true}
+                changeFunction={(e) => inputHandler(e)}
+                blurFunction={(e) => checkError(e)}
+              />
+
+              <InputText
+                className={
+                  credentialsError.phoneError === ""
+                    ? "inputBasicDesign" : "inputBasicDesign inputErrorDesign"
+                }
+                type={"text"}
+                name={"phone"}
+                placeholder={"Teléfono"}
+                required={true}
+                changeFunction={(e) => inputHandler(e)}
+                blurFunction={(e) => checkError(e)}
+              />
+
+              <InputText
+                className={
+                  credentialsError.genderError === ""
+                    ? "inputBasicDesign" : "inputBasicDesign inputErrorDesign"
+                }
+                type={"text"}
+                name={"gender"}
+                placeholder={"Género"}
+                required={true}
+                changeFunction={(e) => inputHandler(e)}
+                blurFunction={(e) => checkError(e)}
+              />
+
+              <InputText
+                className={
+                  credentialsError.postcodeError === ""
+                    ? "inputBasicDesign" : "inputBasicDesign inputErrorDesign"
+                }
+                type={"text"}
+                name={"postcode"}
+                placeholder={"Codigo postal"}
+                required={true}
+                changeFunction={(e) => inputHandler(e)}
+                blurFunction={(e) => checkError(e)}
+              />
+            </Col>
+            <div className="container-btn">
+              <div
+                type="submit"
+                className={
+                  registerAct
+                    ? "registerSendDeac registerSendAct" : "registerSendDeac"
+                }
+                onClick={
+                  // Si el HOOK "registerAct" es true, el onclick nos permitirá ejecutar el registro.
+
+                  registerAct
+                    ? () => {
+                        userRegister();
+                      } : () => {}
+                }
+              >
+                Registrarse
+              </div>
+            </div>
+          </Row>
+        </Container>
+      )}
+      <Footer />
+    </>
+  );
+};

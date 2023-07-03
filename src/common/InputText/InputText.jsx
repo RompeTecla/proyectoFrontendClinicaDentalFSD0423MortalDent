@@ -1,8 +1,8 @@
 import React from 'react';
-import './ImputText.css';
+// import './ImputText.css';
 
 
-export const ImputText = ({
+export const InputText = ({
     className,
     type,
     placeholder,
