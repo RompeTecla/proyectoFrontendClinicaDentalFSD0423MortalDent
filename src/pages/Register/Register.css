@@ -2,14 +2,18 @@
     height: 33.5rem;
 }
 .allContainerRegister{
-    /* padding-top: 5rem; */
     box-sizing: border-box;
-    border: rgba(140, 83, 206, 0.931) solid 0.2rem;
+    border: rgba(140, 83, 206, 0.932) solid 0.2rem;
     margin: auto;
     margin-top: 3rem;
     border-radius: 2rem;
     width: 45rem;
     height: 28rem;
+    box-shadow: 1px 1px 0px 0px hsla(268, 56%, 57%, 0.932);
+    box-shadow: 2px 2px 0px 0px hsl(268,56%,56%, 0.932);
+    box-shadow: 3px 3px 0px 0px hsl(268,56%,55%, 0.932);
+    box-shadow: 4px 4px 0px 0px hsl(268,56%,54%, 0.932);
+    box-shadow: 5px 5px 0px 0px hsl(268,56%,53%, 0.932);
 }
 .containerRegister {
     display: flex;
@@ -28,6 +32,7 @@
     margin: 0.2rem;
     width: 15rem;
     height: 2.5rem;
+    text-align: center;
 }
 .rowInput{
     width: 40rem;
@@ -35,19 +40,13 @@
 .containerIcon{
     display: flex;
     justify-content: center;
-    /* margin-top: 2rem; */
 }
 .iconLogin{
     font-size: 4rem;
     color: rgb(3, 45, 101);
 }
-.btnContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .btnLogin{
-    background-color: rgb(3, 45, 101);
+    background-color: rgb(255, 255, 255);
     border-color: rgb(3, 45, 101);
     font-family: 'Exo', sans-serif;
     width: 5rem;
@@ -63,8 +62,8 @@
 }
 .registerSendDeac {
     color: #fff;
-    background-color: rgb(3, 45, 101);
-    border-color: #007bff;
+    background-color: rgba(140, 83, 206, 0.931);
+    border-color: rgba(140, 83, 206, 0.931);
     font-family: 'Exo', sans-serif;
     border-radius: 0.6rem;
     padding: 0.5rem 1rem;
@@ -78,7 +77,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15rem;
+    width: 10rem;
+    transition: 0.5s;
+}
+.registerSendDeac:hover {
+    color: rgb(140, 83, 206);
+    background-color: rgba(226, 207, 247, 0.931);
+    border-color: rgba(226, 207, 247, 0.931);
+    transition: 0.5s;
 }
 .registerSendAct {
     cursor: pointer;
@@ -105,20 +111,27 @@
     align-items: center;
     padding-bottom: 1rem;
 }
-footer{
-    /* display: flex;
-    justify-content: flex-end; */
-}
 @media(max-width:992px){
     .rowInput{
         width: 28rem;
     }
 }
 @media(max-width:500px){
+    .allContainer{
+        height: auto;
+    }
     .rowInput{
         width: 20rem;
     }
     .allContainerRegister{
         width: auto;
+        box-sizing: border-box;
+        border: rgba(140, 83, 206, 0.932) solid 0.2rem;
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        border-radius: 2rem;
+        width: 21.5rem;
+        height: 40rem;
     }
 }

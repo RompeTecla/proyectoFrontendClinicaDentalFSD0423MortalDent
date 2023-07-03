@@ -126,181 +126,191 @@ export const Register = () => {
     }));
   };
 
-//   const userRegister = () => {
-//     registerUser(credentials);
-//     console.log("Credenciales: " + credentials);
+  //   const userRegister = () => {
+  //     registerUser(credentials);
+  //     console.log("Credenciales: " + credentials);
 
-//     setWelcome(`Bienvenida/o y grácias por confiar en nuestros profesionales.`);
+  //     setWelcome(`Bienvenida/o y grácias por confiar en nuestros profesionales.`);
 
-//     //Redirección a Home
+  //     //Redirección a Home
 
-//     setTimeout(() => {
-//       navigate("/home");
-//     }, 2500);
-//   };
+  //     setTimeout(() => {
+  //       navigate("/home");
+  //     }, 2500);
+  //   };
 
   return (
     <>
       <NavBar />
       <div className="allContainer">
-      <div className="allContainerRegister">
-      <div className="containerIcon">
-        <div className="bi bi-person-workspace iconLogin"></div>
-      </div>
-      {welcome !== "" ? (
-        <div className="date-confirm">{welcome}</div>
-      ) : (
-        <Container className="containerRegister">
-          <Row className="rowInput">
-            <Col md={12} lg={6} className="containerInputs">
-              <InputText
-                className={
-                  credentialsError.emailError === ""
-                    ? "inputBasicDesign"
-                    : "inputBasicDesign inputErrorDesign"
-                }
-                type={"email"}
-                name={"email"}
-                placeholder={"Email"}
-                required={true}
-                changeFunction={(e) => inputHandler(e)}
-                blurFunction={(e) => checkError(e)}
-              />
-              <div>{credentialsError.emailError}</div>
+        <div className="allContainerRegister">
+          <div className="containerIcon">
+            <div className="bi bi-person-workspace iconLogin"></div>
+          </div>
+          {welcome !== "" ? (
+            <div className="date-confirm">{welcome}</div>
+          ) : (
+            <Container className="containerRegister">
+              <Row className="rowInput">
+                <Col md={12} lg={6} className="containerInputs">
+                  <InputText
+                    className={
+                      credentialsError.emailError === ""
+                        ? "inputBasicDesign"
+                        : "inputBasicDesign inputErrorDesign"
+                    }
+                    type={"email"}
+                    name={"email"}
+                    placeholder={"Email"}
+                    required={true}
+                    changeFunction={(e) => inputHandler(e)}
+                    blurFunction={(e) => checkError(e)}
+                  />
+                  <div>{credentialsError.emailError}</div>
 
-              <InputText
-                className={
-                  credentialsError.passwordError === ""
-                    ? "inputBasicDesign" : "inputBasicDesign inputErrorDesign"
-                }
-                type={"password"}
-                name={"password"}
-                placeholder={"Contraseña"}
-                required={true}
-                changeFunction={(e) => inputHandler(e)}
-                blurFunction={(e) => checkError(e)}
-              />
-              <div>{credentialsError.passwordError}</div>
+                  <InputText
+                    className={
+                      credentialsError.passwordError === ""
+                        ? "inputBasicDesign"
+                        : "inputBasicDesign inputErrorDesign"
+                    }
+                    type={"password"}
+                    name={"password"}
+                    placeholder={"Contraseña"}
+                    required={true}
+                    changeFunction={(e) => inputHandler(e)}
+                    blurFunction={(e) => checkError(e)}
+                  />
+                  <div>{credentialsError.passwordError}</div>
 
-              <InputText
-                className={
-                  credentialsError.usernameError === ""
-                    ? "inputBasicDesign"
-                    : "inputBasicDesign inputErrorDesign"
-                }
-                type={"text"}
-                name={"username"}
-                placeholder={"Nombre de usuario"}
-                required={true}
-                changeFunction={(e) => inputHandler(e)}
-                blurFunction={(e) => checkError(e)}
-              />
+                  <InputText
+                    className={
+                      credentialsError.usernameError === ""
+                        ? "inputBasicDesign"
+                        : "inputBasicDesign inputErrorDesign"
+                    }
+                    type={"text"}
+                    name={"username"}
+                    placeholder={"Nombre de usuario"}
+                    required={true}
+                    changeFunction={(e) => inputHandler(e)}
+                    blurFunction={(e) => checkError(e)}
+                  />
 
-              <InputText
-                className={
-                  credentialsError.nameError === ""
-                    ? "inputBasicDesign"
-                    : "inputBasicDesign inputErrorDesign"
-                }
-                type={"text"}
-                name={"name"}
-                placeholder={"Nombre"}
-                required={true}
-                changeFunction={(e) => inputHandler(e)}
-                blurFunction={(e) => checkError(e)}
-              />
+                  <InputText
+                    className={
+                      credentialsError.nameError === ""
+                        ? "inputBasicDesign"
+                        : "inputBasicDesign inputErrorDesign"
+                    }
+                    type={"text"}
+                    name={"name"}
+                    placeholder={"Nombre"}
+                    required={true}
+                    changeFunction={(e) => inputHandler(e)}
+                    blurFunction={(e) => checkError(e)}
+                  />
 
-              <InputText
-                className={
-                  credentialsError.surnameError === ""
-                    ? "inputBasicDesign"
-                    : "inputBasicDesign inputErrorDesign"
-                }
-                type={"text"}
-                name={"surname"}
-                placeholder={"Apellido"}
-                required={true}
-                changeFunction={(e) => inputHandler(e)}
-                blurFunction={(e) => checkError(e)}
-              />
-            </Col>
-            <Col md={12} lg={6} className="containerInputs cont-inp-2">
-              <InputText
-                className={
-                  credentialsError.addressError === ""
-                    ? "inputBasicDesign"
-                    : "inputBasicDesign inputErrorDesign"
-                }
-                type={"text"}
-                name={"address"}
-                placeholder={"Dirección"}
-                required={true}
-                changeFunction={(e) => inputHandler(e)}
-                blurFunction={(e) => checkError(e)}
-              />
+                  <InputText
+                    className={
+                      credentialsError.surnameError === ""
+                        ? "inputBasicDesign"
+                        : "inputBasicDesign inputErrorDesign"
+                    }
+                    type={"text"}
+                    name={"surname"}
+                    placeholder={"Apellido"}
+                    required={true}
+                    changeFunction={(e) => inputHandler(e)}
+                    blurFunction={(e) => checkError(e)}
+                  />
+                </Col>
+                <Col
+                  md={12}
+                  lg={6}
+                  className="containerInputs containerInput02"
+                >
+                  <InputText
+                    className={
+                      credentialsError.addressError === ""
+                        ? "inputBasicDesign"
+                        : "inputBasicDesign inputErrorDesign"
+                    }
+                    type={"text"}
+                    name={"address"}
+                    placeholder={"Dirección"}
+                    required={true}
+                    changeFunction={(e) => inputHandler(e)}
+                    blurFunction={(e) => checkError(e)}
+                  />
 
-              <InputText
-                className={
-                  credentialsError.phoneError === ""
-                    ? "inputBasicDesign" : "inputBasicDesign inputErrorDesign"
-                }
-                type={"text"}
-                name={"phone"}
-                placeholder={"Teléfono"}
-                required={true}
-                changeFunction={(e) => inputHandler(e)}
-                blurFunction={(e) => checkError(e)}
-              />
+                  <InputText
+                    className={
+                      credentialsError.phoneError === ""
+                        ? "inputBasicDesign"
+                        : "inputBasicDesign inputErrorDesign"
+                    }
+                    type={"text"}
+                    name={"phone"}
+                    placeholder={"Teléfono"}
+                    required={true}
+                    changeFunction={(e) => inputHandler(e)}
+                    blurFunction={(e) => checkError(e)}
+                  />
 
-              <InputText
-                className={
-                  credentialsError.genderError === ""
-                    ? "inputBasicDesign" : "inputBasicDesign inputErrorDesign"
-                }
-                type={"text"}
-                name={"gender"}
-                placeholder={"Género"}
-                required={true}
-                changeFunction={(e) => inputHandler(e)}
-                blurFunction={(e) => checkError(e)}
-              />
+                  <InputText
+                    className={
+                      credentialsError.genderError === ""
+                        ? "inputBasicDesign"
+                        : "inputBasicDesign inputErrorDesign"
+                    }
+                    type={"text"}
+                    name={"gender"}
+                    placeholder={"Género"}
+                    required={true}
+                    changeFunction={(e) => inputHandler(e)}
+                    blurFunction={(e) => checkError(e)}
+                  />
 
-              <InputText
-                className={
-                  credentialsError.postcodeError === ""
-                    ? "inputBasicDesign" : "inputBasicDesign inputErrorDesign"
-                }
-                type={"text"}
-                name={"postcode"}
-                placeholder={"Codigo postal"}
-                required={true}
-                changeFunction={(e) => inputHandler(e)}
-                blurFunction={(e) => checkError(e)}
-              />
-            </Col>
-            <div className="containerBtn">
-              <div
-                type="submit"
-                className={
-                  registerAct
-                    ? "registerSendDeac registerSendAct" : "registerSendDeac"
-                }
-                onClick={
-                  // Si el HOOK "registerAct" es true, el onclick nos permitirá ejecutar el registro.
+                  <InputText
+                    className={
+                      credentialsError.postcodeError === ""
+                        ? "inputBasicDesign"
+                        : "inputBasicDesign inputErrorDesign"
+                    }
+                    type={"text"}
+                    name={"postcode"}
+                    placeholder={"Codigo postal"}
+                    required={true}
+                    changeFunction={(e) => inputHandler(e)}
+                    blurFunction={(e) => checkError(e)}
+                  />
+                </Col>
+                <div className="containerBtn">
+                  <div
+                    type="submit"
+                    className={
+                      registerAct
+                        ? "registerSendDeac registerSendAct"
+                        : "registerSendDeac"
+                    }
+                    onClick={
+                      // Si el HOOK "registerAct" es true, el onclick nos permitirá ejecutar el registro.
 
-                  registerAct
-                    ? () => {
-                        userRegister();
-                      } : () => {}
-                }
-              >
-                Registrarse
-              </div>
-            </div>
-          </Row>
-        </Container>
-      )}
-      </div>
+                      registerAct
+                        ? () => {
+                            userRegister();
+                          }
+                        : () => {}
+                    }
+                  >
+                    Registrarse
+                  </div>
+                </div>
+              </Row>
+            </Container>
+          )}
+        </div>
       </div>
       <Footer />
     </>
