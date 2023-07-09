@@ -1,0 +1,17 @@
+
+.logoBox {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 4.5rem;
+    width: 6.5rem;
+}
+.logoImg {
+    height: 4.5rem;
+    width: 6.5rem;
+}
+@media (max-width: 768px) {
+    #miDiv {
+      display: none;
+    }
+  }

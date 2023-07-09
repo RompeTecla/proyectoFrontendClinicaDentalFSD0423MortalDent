@@ -41,7 +41,8 @@
   font-weight: 900;
   font-family: "Exo", sans-serif;
   color: rgba(140, 83, 206, 0.931);
-  margin-top: -2rem;
+  margin-top: -1rem;
+  margin-bottom: -0.5rem;
   justify-content: center;
   align-items: center;
   text-shadow: 2px 2px 2px rgb(255, 255, 255);
@@ -237,9 +238,6 @@
     align-items: center;
     flex-direction: column;
   }
-  .offerPrice {
-    margin-top: 2rem;
-  }
   .aboutClinicHomeContainer {
     display: none;
   }
@@ -251,6 +249,12 @@
   }
 }
 @media (max-width: 576px) {
+  .allHome{
+    margin: 0;
+  }
+  .allOurData{
+    gap: 2rem;
+  }
   .offerContainerHome {
     height: 28rem;
   }

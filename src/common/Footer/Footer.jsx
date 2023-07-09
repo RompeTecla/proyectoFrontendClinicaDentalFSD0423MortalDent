@@ -5,53 +5,6 @@ import "./Footer.css";
 export const Footer = () => {
   return (
     <div className="mortaldentFooter">
-      {/* <Container>
-        <Row>
-          <Col className="col-footer">
-            <div>
-              <p className="title-footer">MORTALDENT</p>
-            </div>
-            <div className="icons-car">
-              <i class="bi bi-linkedin"></i>
-              <i class="bi bi-instagram"></i>
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-twitter"></i>
-              <i class="bi bi-youtube"></i>
-            </div>
-            <div className="call-free">
-              <p>Informate gratis compromiso en el:</p>
-              <Button className="number-phone">969 136 913</Button>
-            </div>
-          </Col>
-          <Col
-            className="treatment-footer"xs={12}md={12}lg={12}xl={9}xxl={9}>
-            <div className="footer-int-treat">
-              <p className="treatment-title">Implantología</p>
-              <p className="treatment-other">Puente dental sobre implantes</p>
-              <p className="treatment-other">Implante dental unitario</p>
-              <p className="treatment-other">Implantes de carga inmediata</p>
-              <p className="treatment-other">Injerto de hueso y regeneración ósea</p>
-              <p className="treatment-other">Elevación del seno maxilar</p>
-            </div>
-            <div className="footer-int-treat">
-              <p className="treatment-title">Ortodoncia</p>
-              <p className="treatment-other">Brackets</p>
-              <p className="treatment-other">Ortodoncia invisible</p>
-              <p className="treatment-other">Ortodoncia infantil</p>
-              <p className="treatment-other">Ortodoncia adulta</p>
-            </div>
-            <div className="footer-int-treat">
-              <p className="treatment-title">Mejoramos tu sonrisa</p>
-              <p className="treatment-other">Carillas dentales</p>
-              <p className="treatment-other">Blanqueamiento dental</p>
-              <p className="treatment-other">Limpieza dental avanzada</p>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-      <div className="separator-container">
-        <hr className="separator" />
-      </div> */}
       <div className="privacyAll">
         <div className="privacyContainer">
           <p className="privacy">Términos legales</p>

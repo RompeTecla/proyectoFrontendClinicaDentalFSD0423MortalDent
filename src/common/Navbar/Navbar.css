@@ -3,6 +3,8 @@ body {
   padding: 0;
 }
 .allNav {
+  
+  padding: 0;
   background-color: rgb(255, 255, 255);
   width: 100%;
   box-shadow: 0 2px 20px rgb(119, 223, 255);
@@ -10,19 +12,27 @@ body {
   justify-content: center;
   align-items: center;
   border-bottom: solid 0.2rem rgba(119, 223, 255, 0.616);
+  height: 5.5rem;
+  overflow: hidden;
 }
 .rowNav {
   display: flex;
-  gap: 50rem;
+  gap: 20rem;
   align-items: center;
-  
+  height: 100%;
+}
+.logotypeMortaldent {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 .navMenu {
   font-family: "Exo", sans-serif;
   font-size: 1.1rem;
   color: rgb(119, 223, 255);
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   font-weight: 600;
   cursor: pointer;
 }
@@ -32,6 +42,7 @@ body {
   color: rgb(119, 223, 255);
   filter: drop-shadow(0px 0px 2px #ffffff);
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  width: 20rem;
 }
 
 /* MEDIA QUERIES PARA LA NAVBAR */
@@ -61,6 +72,9 @@ body {
   }
 }
 @media (max-width: 576px) {
+  .allNav {
+    height: auto;
+  }
   .rowNav {
     gap: 2rem;
   }
@@ -69,8 +83,10 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: -2rem;
-    padding-bottom: -1rem;
     justify-content: center;
     align-items: center;
+  }
+  .logoBox{
+    display: none;
   }
 }
