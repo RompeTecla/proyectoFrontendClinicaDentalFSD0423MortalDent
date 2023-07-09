@@ -266,7 +266,7 @@ export const Register = () => {
                     }
                     type={"text"}
                     name={"gender"}
-                    placeholder={"Género"}
+                    placeholder={"Sexo"}
                     required={true}
                     changeFunction={(e) => inputHandler(e)}
                     blurFunction={(e) => checkError(e)}

@@ -151,7 +151,7 @@ export const Home = () => {
                 image={smileDesign} className="imgLogoServices"
                 showButton={true}
                 title="Estética dental"
-                text="Llevamos a cabo tratamientos para mejorar y rejuvenecer la apariencia de la sonrisa: blanqueamiento y carillas. Varios descuentos disponibles."
+                text="Ttratamientos para mejorar y rejuvenecer la apariencia de la sonrisa: blanqueamiento y carillas. Varios descuentos disponibles."
               />
             </Col>
             <Col md={6} lg={6} xl={4} xxl={4} className="cardServices">
