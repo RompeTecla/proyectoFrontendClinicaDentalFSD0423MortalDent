@@ -1,0 +1,80 @@
+.allForms {
+  height: 25rem;
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 3rem;
+}
+.inForm {
+  margin: auto;
+  width: 50%;
+}
+.allContainerLogin {
+  box-sizing: border-box;
+  border: rgba(140, 83, 206, 0.932) solid 0.2rem;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  width: 45rem;
+  height: 22rem;
+  box-shadow: 1px 1px 0px 0px hsla(268, 56%, 57%, 0.932),
+    2px 2px 0px 0px hsl(268, 56%, 56%, 0.932),
+    3px 3px 0px 0px hsl(268, 56%, 55%, 0.932),
+    4px 4px 0px 0px hsl(268, 56%, 54%, 0.932),
+    5px 5px 0px 0px hsl(268, 56%, 53%, 0.932),
+    5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.containerIcon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem !important;
+  padding: 0;
+}
+.loginIcon {
+  font-size: 4rem;
+  color: rgba(140, 83, 206, 0.931);
+}
+.text-muted {
+  font-family: "Exo", sans-serif;
+}
+.mb-3 {
+  overflow-y: hidden;
+}
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginDesignAllContainer {
+  height: 71.1vh;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.msgConfirm {
+  color: rgb(140, 83, 206);
+  font-family: "Exo", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+@media (max-width: 576px) {
+  .input-form {
+    width: 20rem;
+  }
+  .inForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

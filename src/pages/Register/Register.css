@@ -1,139 +1,152 @@
-.allContainer{
-    height: 33.5rem;
+.allContainer {
+  height: 33.5rem;
 }
-.allContainerRegister{
+
+.allContainerRegister {
+  box-sizing: border-box;
+  border: rgba(140, 83, 206, 0.932) solid 0.2rem;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  width: 45rem;
+  height: 29rem;
+  box-shadow: 1px 1px 0px 0px hsla(268, 56%, 57%, 0.932),
+    2px 2px 0px 0px hsl(268, 56%, 56%, 0.932),
+    3px 3px 0px 0px hsl(268, 56%, 55%, 0.932),
+    4px 4px 0px 0px hsl(268, 56%, 54%, 0.932),
+    5px 5px 0px 0px hsl(268, 56%, 53%, 0.932),
+    5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.containerRegister {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+
+.iconLogin {
+  font-size: 4rem;
+  color: rgba(140, 83, 206, 0.931);
+}
+
+.inputBasicDesign {
+  width: 15rem;
+  height: 2.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.rowInput {
+  width: 40rem;
+}
+
+.containerIcon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem !important;
+  padding: 0;
+}
+
+.btnLogin {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(3, 45, 101);
+  font-family: "Exo", sans-serif;
+  width: 5rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnLogin:hover {
+  background-color: rgba(255, 255, 255, 0.74);
+  color: rgb(3, 45, 101);
+  font-family: "Exo", sans-serif;
+}
+
+.registerSendDeac {
+  color: #fff;
+  background-color: rgba(140, 83, 206, 0.931);
+  border-color: rgba(140, 83, 206, 0.931);
+  font-family: "Exo", sans-serif;
+  border-radius: 0.4rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  transition: 0.5s;
+}
+
+.registerSendDeac:hover {
+  color: rgb(140, 83, 206);
+  background-color: rgba(226, 207, 247, 0.931);
+  border-color: rgba(226, 207, 247, 0.931);
+  transition: 0.5s;
+}
+
+.registerSendAct {
+  cursor: pointer;
+  background-color: rgb(26, 101, 199);
+  width: 12rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerSendAct:hover {
+  transition: 1s;
+  background-color: rgba(255, 255, 255, 0.74);
+  color: rgb(3, 45, 101);
+  font-family: "Exo", sans-serif;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 992px) {
+  .rowInput {
+    width: 28rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .allContainer {
+    height: auto;
+  }
+
+  .rowInput {
+    width: 20rem;
+  }
+
+  .allContainerRegister {
+    width: auto;
     box-sizing: border-box;
     border: rgba(140, 83, 206, 0.932) solid 0.2rem;
     margin: auto;
     margin-top: 3rem;
+    margin-bottom: 3rem;
     border-radius: 2rem;
-    width: 45rem;
-    height: 28rem;
-    box-shadow: 1px 1px 0px 0px hsla(268, 56%, 57%, 0.932);
-    box-shadow: 2px 2px 0px 0px hsl(268,56%,56%, 0.932);
-    box-shadow: 3px 3px 0px 0px hsl(268,56%,55%, 0.932);
-    box-shadow: 4px 4px 0px 0px hsl(268,56%,54%, 0.932);
-    box-shadow: 5px 5px 0px 0px hsl(268,56%,53%, 0.932);
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-}
-.containerRegister {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: auto;
-    
-}
-.iconLogin {
-    font-size: 4rem;
-    color: rgba(140, 83, 206, 0.931) 
-    !important;
-}
-.inputBasicDesign {
-    margin: 0.2rem;
-    width: 15rem;
-    height: 2.5rem;
-    text-align: center;
-}
-.rowInput{
-    width: 40rem;
-}
-.containerIcon{
-    display: flex;
-    justify-content: center;
-}
-.iconLogin{
-    font-size: 4rem;
-    color: rgb(3, 45, 101);
-}
-.btnLogin{
-    background-color: rgb(255, 255, 255);
-    border-color: rgb(3, 45, 101);
-    font-family: 'Exo', sans-serif;
-    width: 5rem;
-    margin-top: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.btnLogin:hover{
-    background-color: rgba(255, 255, 255, 0.74);
-    color: rgb(3, 45, 101);
-    font-family: 'Exo', sans-serif;
-}
-.registerSendDeac {
-    color: #fff;
-    background-color: rgba(140, 83, 206, 0.931);
-    border-color: rgba(140, 83, 206, 0.931);
-    font-family: 'Exo', sans-serif;
-    border-radius: 0.6rem;
-    padding: 0.5rem 1rem;
-    font-size: 1rem; 
-    margin-top: 3rem;
-    line-height: 1.5;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.15s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10rem;
-    transition: 0.5s;
-}
-.registerSendDeac:hover {
-    color: rgb(140, 83, 206);
-    background-color: rgba(226, 207, 247, 0.931);
-    border-color: rgba(226, 207, 247, 0.931);
-    transition: 0.5s;
-}
-.registerSendAct {
-    cursor: pointer;
-    background-color: rgb(26, 101, 199);
-    width: 12rem;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.registerSendAct:hover {
-    transition: 1s;
-    background-color: rgba(255, 255, 255, 0.74);
-    color: rgb(3, 45, 101);
-    font-family: 'Exo', sans-serif;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.containerBtn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 1rem;
-}
-@media(max-width:992px){
-    .rowInput{
-        width: 28rem;
-    }
-}
-@media(max-width:500px){
-    .allContainer{
-        height: auto;
-    }
-    .rowInput{
-        width: 20rem;
-    }
-    .allContainerRegister{
-        width: auto;
-        box-sizing: border-box;
-        border: rgba(140, 83, 206, 0.932) solid 0.2rem;
-        margin: auto;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        border-radius: 2rem;
-        width: 21.5rem;
-        height: 40rem;
-    }
+    width: 21.5rem;
+    height: 40rem;
+  }
 }

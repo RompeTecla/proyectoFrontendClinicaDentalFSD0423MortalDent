@@ -61,7 +61,7 @@ export const Register = () => {
     setCredentials((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
-      // Con el ...spread... se hace una copia del estado inicial del componente para no tener que mutar el original,
+      // Con el ...prevState se hace una copia del estado inicial del componente para no tener que mutar el original,
       // a continuacion se asigna el valor del input que esté escribiendose a la parte correspondiente del Hook.
     }));
   };
@@ -126,18 +126,18 @@ export const Register = () => {
     }));
   };
 
-  //   const userRegister = () => {
-  //     registerUser(credentials);
-  //     console.log("Credenciales: " + credentials);
+    const userRegister = () => {
+      registerUser(credentials);
+      console.log("Credenciales: " + credentials);
 
-  //     setWelcome(`Bienvenida/o y grácias por confiar en nuestros profesionales.`);
+      setWelcome(`Bienvenida/o y grácias por confiar en nuestros profesionales.`);
 
-  //     //Redirección a Home
+      //Redirección a Home
 
-  //     setTimeout(() => {
-  //       navigate("/home");
-  //     }, 2500);
-  //   };
+      setTimeout(() => {
+        navigate("/home");
+      }, 2500);
+    };
 
   return (
     <>
@@ -148,7 +148,7 @@ export const Register = () => {
             <div className="bi bi-person-workspace iconLogin"></div>
           </div>
           {welcome !== "" ? (
-            <div className="date-confirm">{welcome}</div>
+            <div className="msgConfirm">{welcome}</div>
           ) : (
             <Container className="containerRegister">
               <Row className="rowInput">

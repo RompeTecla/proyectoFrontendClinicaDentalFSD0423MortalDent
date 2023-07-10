@@ -1,0 +1,44 @@
+.loginSendDesign {
+  color: #fff;
+  background-color: rgba(140, 83, 206, 0.931);
+  border-color: rgba(140, 83, 206, 0.931);
+  font-family: "Exo", sans-serif;
+  border-radius: 0.4rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-top: 2rem;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+}
+.loginSendDesign:hover {
+  color: rgb(140, 83, 206);
+  background-color: rgba(226, 207, 247, 0.931);
+  border-color: rgba(226, 207, 247, 0.931);
+  transition: 0.5s;
+}
+.loginSendAct {
+  cursor: pointer;
+  background-color: rgb(26, 101, 199);
+  width: 7rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginSendAct:hover {
+  transition: 1s;
+  background-color: rgb(255, 255, 255);
+  color: rgba(140, 83, 206, 0.931);
+  font-family: "Exo", sans-serif;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
