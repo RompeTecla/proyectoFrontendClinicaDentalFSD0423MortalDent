@@ -11,7 +11,7 @@ export const validate = (name, data, required) => {
       if (data === "" && required === true) {
         return {
           message: "Por favor, rellene los campos requeridos",
-          validated: false,
+          validated: false
         };
         //Evaluamos mediante la expresión regular
       } else if (!/[a-z]/gi.test(data)) {

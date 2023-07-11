@@ -7,7 +7,7 @@ import { NavBar } from "../../common/Navbar/NavBar";
 import { useEffect } from "react";
 import { InputText } from "../../common/InputText/InputText";
 import { validate } from "../../services/useful";
-// import { registerUser } from "../../services/apiCalls";
+import { registerUser } from "../../services/apiCalls";
 
 export const Register = () => {
   const navigate = useNavigate();
@@ -135,7 +135,7 @@ export const Register = () => {
       //Redirección a Home
 
       setTimeout(() => {
-        navigate("/home");
+        navigate("/");
       }, 2500);
     };
 
@@ -176,7 +176,7 @@ export const Register = () => {
                     }
                     type={"password"}
                     name={"password"}
-                    placeholder={"Contraseña"}
+                    placeholder={"Contraseña min 8 caracteres."}
                     required={true}
                     changeFunction={(e) => inputHandler(e)}
                     blurFunction={(e) => checkError(e)}
@@ -187,7 +187,7 @@ export const Register = () => {
                     className={
                       credentialsError.usernameError === ""
                         ? "inputBasicDesign"
-                        : "inputBasicDesign inputErrorDesign"
+                        : "inputBasicDesign"
                     }
                     type={"text"}
                     name={"username"}
@@ -201,7 +201,7 @@ export const Register = () => {
                     className={
                       credentialsError.nameError === ""
                         ? "inputBasicDesign"
-                        : "inputBasicDesign inputErrorDesign"
+                        : "inputBasicDesign"
                     }
                     type={"text"}
                     name={"name"}
@@ -215,7 +215,7 @@ export const Register = () => {
                     className={
                       credentialsError.surnameError === ""
                         ? "inputBasicDesign"
-                        : "inputBasicDesign inputErrorDesign"
+                        : "inputBasicDesign"
                     }
                     type={"text"}
                     name={"surname"}
@@ -234,7 +234,7 @@ export const Register = () => {
                     className={
                       credentialsError.addressError === ""
                         ? "inputBasicDesign"
-                        : "inputBasicDesign inputErrorDesign"
+                        : "inputBasicDesign"
                     }
                     type={"text"}
                     name={"address"}
@@ -248,7 +248,7 @@ export const Register = () => {
                     className={
                       credentialsError.phoneError === ""
                         ? "inputBasicDesign"
-                        : "inputBasicDesign inputErrorDesign"
+                        : "inputBasicDesign"
                     }
                     type={"text"}
                     name={"phone"}
@@ -262,7 +262,7 @@ export const Register = () => {
                     className={
                       credentialsError.genderError === ""
                         ? "inputBasicDesign"
-                        : "inputBasicDesign inputErrorDesign"
+                        : "inputBasicDesign"
                     }
                     type={"text"}
                     name={"gender"}
@@ -276,7 +276,7 @@ export const Register = () => {
                     className={
                       credentialsError.postcodeError === ""
                         ? "inputBasicDesign"
-                        : "inputBasicDesign inputErrorDesign"
+                        : "inputBasicDesign"
                     }
                     type={"text"}
                     name={"postcode"}

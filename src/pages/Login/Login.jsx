@@ -48,7 +48,7 @@ export const Login = () => {
     }));
   };
 
-  const logeame = () => {
+  const logMe = () => {
     loginMe(credenciales)
       .then((respuesta) => {
         let decodificado = decodeToken(respuesta.data.token);
@@ -146,12 +146,12 @@ export const Login = () => {
           <div className="allForms">
             <div className="allContainerLogin">
             <Form className="inForm">
-              <Form.Group className="mb-3" controlId="basicEmailControl">
+              <Form.Group className="mb-3 containerForms" controlId="basicEmailControl">
                 <div className="containerIcon">
-                  <i class="bi bi-person-workspace loginIcon"></i>
+                <i className="bi bi-person-workspace loginIcon"></i>
                 </div>
                 <>
-                  <div>
+                  <div className="inputsLogin">
                     <InputText
                       className={
                         credencialesError.passwordError === ""
@@ -196,7 +196,7 @@ export const Login = () => {
                             : "loginSendDesign"
                         }
                         buttonName="Confirmar"
-                        onClick={loginAct ? logeame : () => {}}
+                        onClick={loginAct ? logMe : () => {}}
                       />
                     </div>
                   </div>

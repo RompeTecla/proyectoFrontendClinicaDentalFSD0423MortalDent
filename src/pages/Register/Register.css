@@ -3,19 +3,22 @@
 }
 
 .allContainerRegister {
-  box-sizing: border-box;
+  /* display: flex; */
+  align-items: center;
+  /* box-sizing: border-box; */
   border: rgba(140, 83, 206, 0.932) solid 0.2rem;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   border-radius: 2rem;
   width: 45rem;
-  height: 29rem;
+  height: 31rem;
   box-shadow: 1px 1px 0px 0px hsla(268, 56%, 57%, 0.932),
     2px 2px 0px 0px hsl(268, 56%, 56%, 0.932),
     3px 3px 0px 0px hsl(268, 56%, 55%, 0.932),
     4px 4px 0px 0px hsl(268, 56%, 54%, 0.932),
     5px 5px 0px 0px hsl(268, 56%, 53%, 0.932),
     5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
 }
 
 .containerRegister {
@@ -115,14 +118,22 @@
   justify-content: center;
   align-items: center;
 }
+.inputBasicDesign{
+  height: 2.5rem;
+}
 
 .containerBtn {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 1rem;
 }
-
+.msgConfirm {
+  font-size: 3rem !important;
+  text-align: center;
+  margin-top: 3rem !important;
+}
 @media (max-width: 992px) {
   .rowInput {
     width: 28rem;
@@ -147,6 +158,8 @@
     margin-bottom: 3rem;
     border-radius: 2rem;
     width: 21.5rem;
-    height: 40rem;
+    height: 43rem;
+    font-size: 1rem;
+    color: rgb(255, 0, 0);
   }
 }
