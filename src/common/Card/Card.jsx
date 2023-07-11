@@ -14,3 +14,4 @@ export const CardComponent = ({ image, showButton, title, text }) => {
     </div>
   );
 }
+export default CardComponent;

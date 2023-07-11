@@ -1,0 +1,30 @@
+*{
+    display: flexbox;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.body{
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.allCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.cardContainer{
+    margin-top: 3rem;
+}
+@media(max-width:768px){
+    .cardContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+   
+}
