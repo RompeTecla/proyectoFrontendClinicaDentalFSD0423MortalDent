@@ -5,6 +5,8 @@ import { Home } from './pages/Home/Home';
 import { Register } from './pages/Register/Register';
 import { Login } from './pages/Login/Login';
 import { Treatment } from './pages/Treatments/Treatments';
+import { Users } from './pages/Users/Users';
+import { Appointment } from './pages/Appointments/Appointments';
 
 
 export const App = () => {
@@ -15,6 +17,8 @@ export const App = () => {
         <Route path='/register' element={<Register/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/treatments' element={<Treatment/>}/>
+        <Route path="/users" element={<Users/>}/>
+        <Route path="/appointments" element={<Appointment/>}/>
       </Routes>
     </>
   )
