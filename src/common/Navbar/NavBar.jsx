@@ -54,7 +54,7 @@ export const NavBar = () => {
                   2 ? (
                   <div className="navigatorDesign">
                     <Navigator ruta={"Inicio"} destino={"/"} />
-                    <Navigator ruta={"Citas"} destino={"/appointments"} />
+                    <Navigator ruta={"Tratamientos"} destino={"/treatments"} />
                     <div onClick={() => navigate("/appointments")}>Citas</div>
                     <div>
                       {
