@@ -7,6 +7,5 @@ export const loginMe = async(body) => {
 }
 
 export const registerUser = async (body) => {
-
-    return await axios.post(`${root}users`, body)
+    return await axios.post(`${root}users/reg`, body)
   }

@@ -44,6 +44,18 @@ body {
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
   width: 20rem;
 }
+.navigatorDesign {
+  font-family: "Exo", sans-serif;
+  font-size: 1.1rem;
+  color: rgb(119, 223, 255);
+  display: flex;
+  gap: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.modeAdmin{
+  color: red
+}
 
 /* MEDIA QUERIES PARA LA NAVBAR */
 

@@ -32,7 +32,7 @@ export const validate = (name, data, required) => {
       } else if (
         !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(data)
       ) {
-        return { message: "Invalid e-mail format", validated: false };
+        return { message: "Formato de email incorrecto", validated: false };
       }
 
       return { message: "", validated: true };

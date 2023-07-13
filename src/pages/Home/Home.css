@@ -1,4 +1,5 @@
 * {
+  user-select: none;
   margin: 0;
   padding: 0;
 }
@@ -112,6 +113,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 4rem;
+  margin-bottom: 5rem;
 }
 .clinicHomeImgContainer {
   display: flex;
@@ -281,15 +283,14 @@
   .allNav{
     overflow-y: hidden;
     height: 13rem;
-  }.navMenu {
-    margin-top: -1rem;
-    gap: 0;
   }
   .navbarTitle {
     padding-top: 2rem;
   }
   .rowNav{
     gap: 2rem;
-  
+  }
+  .ourHistory{
+    margin-bottom: 5rem;
   }
 }
