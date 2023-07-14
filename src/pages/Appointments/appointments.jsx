@@ -46,10 +46,12 @@ export const Appointment = () => {
                       </div>
                     </div>
                     <div className="treatmentLine">
-                      <div className="line01">Hora:</div>
-                      <div>
-                        {Moment(tag.date).format("DD/MM/YYYY HH:mm:ss")}
-                      </div>
+                      <div className="line01">Fecha:</div>
+                      <div>{tag.date}</div>
+                    </div>
+                    <div className="treatmentLineCom">
+                      <div className="line01">Comentario:</div>
+                      <div> {tag.observations}</div>
                     </div>
                     <div className="treatmentLine">
                       <div className="line01">Estado:</div>
