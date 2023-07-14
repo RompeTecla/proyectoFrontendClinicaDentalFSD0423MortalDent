@@ -27,15 +27,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-.navMenu {
-  font-family: "Exo", sans-serif;
-  font-size: 1.1rem;
-  color: rgb(119, 223, 255);
-  display: flex;
-  gap: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-}
 .navbarTitle {
   font-family: "Exo", sans-serif;
   font-size: 3rem;
@@ -44,7 +35,7 @@ body {
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
   width: 20rem;
 }
-.navigatorDesign {
+.navMenu {
   font-family: "Exo", sans-serif;
   font-size: 1.1rem;
   color: rgb(119, 223, 255);
@@ -52,6 +43,10 @@ body {
   gap: 1rem;
   font-weight: 600;
   cursor: pointer;
+  text-shadow: 0px 0px 1px rgb(0, 0, 0);
+}
+.navigatorDesign {
+  text-shadow: 0px 0px 1px rgb(0, 0, 0);
 }
 .modeAdmin{
   color: red

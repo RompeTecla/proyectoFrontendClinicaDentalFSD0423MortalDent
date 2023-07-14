@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react"; 
+import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { userData } from "../../services/userSlice";
 import { useNavigate } from "react-router-dom";
@@ -7,7 +8,7 @@ import { NavBar } from "../../common/Navbar/NavBar";
 import { Col, Container, Row } from "react-bootstrap";
 import { Footer } from "../../common/Footer/Footer";
 import Moment from "moment";
-import "./appointments.css";
+import "../Appointments/appointments.css";
 
 export const Appointment = () => {
   const [appointment, setAppointment] = useState([]);
@@ -33,7 +34,7 @@ export const Appointment = () => {
     <>
       <NavBar />
       <div className="yourAppointments">Todas las citas</div>
-      <Container>
+      <Container className="AllContainerBootstrap">
         {appointment.length > 0 ? (
           <Row>
             {appointment.map((tag) => {
