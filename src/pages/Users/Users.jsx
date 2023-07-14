@@ -82,7 +82,7 @@ export const Users = () => {
             })}
           </Row>
         ) : (
-          <div className="date-confirm">CARGANDO TODAS LOS USUARIOS...</div>
+          <div className="dateConfirm">CARGANDO TODAS LOS USUARIOS...</div>
         )}
       </Container>
       <Footer />

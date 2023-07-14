@@ -7,7 +7,7 @@ import { NavBar } from "../../common/Navbar/NavBar";
 import { Col, Container, Row } from "react-bootstrap";
 import { Footer } from "../../common/Footer/Footer";
 import Moment from "moment";
-import "../Appointments/appointments.css";
+import "../Appointments/Appointments.css";
 
 export const Appointment = () => {
   const [appointment, setAppointment] = useState([]);

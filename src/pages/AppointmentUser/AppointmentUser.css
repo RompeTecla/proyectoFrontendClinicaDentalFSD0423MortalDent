@@ -1,0 +1,139 @@
+.AllContainerBootstrap {
+  min-height: 68vh;
+}
+
+.deleteDesign {
+  width: 10rem;
+}
+
+.iconLogin {
+  font-size: 4rem;
+  color: rgba(140, 83, 206, 0.931);
+}
+
+.containerInt {
+  padding: 0.5rem;
+  margin-bottom: 5rem;
+  margin-top: 4rem;
+  flex: 1 0 33%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.contTreatment01 {
+  margin-left: 2rem;
+  width: 23rem;
+  height: 23rem;
+  box-shadow: 0px 0px 5px 0px rgba(206, 47, 255, 0.267);
+  transition: all 0.3s ease-in-out;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(3, 45, 101);
+  margin-bottom: 1rem;
+}
+
+.contTreatment01:hover {
+  box-shadow: 0px 0px 20px 5px rgba(206, 47, 255, 0.178);
+  transform: scale(100.5%);
+}
+
+.contTreatment:hover {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.allAppointment {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.iconAppointment {
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+}
+
+.allButtons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.treatmentLine {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.line01 {
+  color: rgb(113, 107, 107);
+}
+
+.deleteDesign {
+  color: #fff;
+  background-color: rgba(140, 83, 206, 0.931);
+  border-color: rgba(140, 83, 206, 0.931);
+  font-family: "Exo", sans-serif;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+}
+
+.deleteDesign:hover {
+  transition: 0.5s;
+  background-color: rgba(226, 207, 247, 0.931);
+  border-color: rgba(226, 207, 247, 0.931);
+  color: rgb(140, 83, 206);
+  font-family: "Exo", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnDate {
+  display: flex;
+  position: relative;
+  left: 7%;
+  margin-top: 4rem;
+  width: 10rem;
+}
+
+.yourAppointments {
+  color: rgba(140, 83, 206, 0.931);
+  text-shadow: 4px 4px 5px rgba(202, 167, 241, 0.719);
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.dateConfirm {
+  color: rgba(140, 83, 206, 0.931);
+  font-family: "Exo", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
+@media screen and (max-width: 767px) {
+  .containerInt {
+    flex-basis: 50%;
+  }
+}

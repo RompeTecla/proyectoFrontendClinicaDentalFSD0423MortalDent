@@ -20,7 +20,7 @@
   .contTreatment01 {
     margin-left: 2rem;
     width: 23rem;
-    height: 23rem;
+    height: auto;
     box-shadow: 0px 0px 5px 0px rgba(206, 47, 255, 0.267);
     transition: all 0.3s ease-in-out;
     border-radius: 1rem;
