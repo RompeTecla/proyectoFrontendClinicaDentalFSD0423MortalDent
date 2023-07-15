@@ -24,7 +24,7 @@
 .contTreatment01 {
   margin-left: 2rem;
   width: 23rem;
-  height: 23rem;
+  height: auto;
   box-shadow: 0px 0px 5px 0px rgba(206, 47, 255, 0.267);
   transition: all 0.3s ease-in-out;
   border-radius: 1rem;
@@ -34,7 +34,7 @@
   align-items: center;
   font-size: 1.1rem;
   font-weight: 600;
-  color: rgb(3, 45, 101);
+  color: rgba(140, 83, 206, 0.931);
   margin-bottom: 1rem;
 }
 

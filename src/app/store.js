@@ -4,9 +4,11 @@ import storage from 'redux-persist/lib/storage';
 import { combineReducers } from 'redux';
 import { persistReducer } from 'redux-persist';
 import thunk from 'redux-thunk';
+import appointmentSlice from '../services/appointmentSlice';
 
 const reducers = combineReducers({
-    user: userSlice
+    user: userSlice,
+    appointment: appointmentSlice,
     
 })
 

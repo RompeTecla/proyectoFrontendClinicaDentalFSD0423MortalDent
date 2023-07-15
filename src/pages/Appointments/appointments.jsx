@@ -6,7 +6,6 @@ import { appointmentsAll } from "../../services/apiCalls";
 import { NavBar } from "../../common/Navbar/NavBar";
 import { Col, Container, Row } from "react-bootstrap";
 import { Footer } from "../../common/Footer/Footer";
-import Moment from "moment";
 import "../Appointments/Appointments.css";
 
 export const Appointment = () => {
@@ -27,7 +26,7 @@ export const Appointment = () => {
         })
         .catch((error) => console.log(error));
     }
-  }, []); // Se removió [appointment] del array de dependencias ya que no es necesario en este caso
+  }, []);
 
   return (
     <>

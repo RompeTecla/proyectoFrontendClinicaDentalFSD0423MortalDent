@@ -7,6 +7,7 @@ import { Login } from './pages/Login/Login';
 import { Treatment } from './pages/Treatments/Treatments';
 import { Users } from './pages/Users/Users';
 import { Appointment } from './pages/Appointments/Appointments';
+import { AppointmentsAsClient } from "./pages/AppointmentUser/AppointmentUser";
 
 
 export const App = () => {
@@ -19,6 +20,7 @@ export const App = () => {
         <Route path='/treatments' element={<Treatment/>}/>
         <Route path="/users" element={<Users/>}/>
         <Route path="/appointments" element={<Appointment/>}/>
+        <Route path="/appointments/book" element={<AppointmentsAsClient/>}/>
       </Routes>
     </>
   )
