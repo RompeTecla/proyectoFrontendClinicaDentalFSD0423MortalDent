@@ -60,7 +60,11 @@ export const Login = () => {
 
         dispatch(login({ credentials: datosBackend }));
 
-        setWelcome(`¡Bienvenid@ de nuevo!`);
+        const welcomeMessage = getWelcomeMessage(
+          decodificado.gender,
+          decodificado.name
+        );
+        setWelcome(welcomeMessage);
 
         setTimeout(() => {
           navigate("/");
@@ -134,7 +138,20 @@ export const Login = () => {
     }));
   };
 
-  const sendValue = () => {};
+  const getWelcomeMessage = (gender, name) => {
+    if (
+      gender === "female" ||
+      gender === "Female" ||
+      gender === "mujer" ||
+      gender === "Mujer" ||
+      gender === "femenino" ||
+      gender === "Femenino"
+    ) {
+      return `Bienvenida ${name}!`;
+    } else {
+      return `Bienvenido ${name}!`;
+    }
+  };
 
   return (
     <>
@@ -145,64 +162,70 @@ export const Login = () => {
         ) : (
           <div className="allForms">
             <div className="allContainerLogin">
-            <Form className="inForm">
-              <Form.Group className="mb-3 containerForms" controlId="basicEmailControl">
-                <div className="containerIcon">
-                <i className="bi bi-person-workspace loginIcon"></i>
-                </div>
-                <>
-                  <div className="inputsLogin">
-                    <InputText
-                      className={
-                        credencialesError.passwordError === ""
-                          ? "inputBasicDesign"
-                          : "inputBasicDesign inputErrorDesign"
-                      }
-                      type={"email"}
-                      name={"email"}
-                      placeholder={"Email"}
-                      required={true}
-                      changeFunction={(e) => inputHandler(e)}
-                      blurFunction={(e) => checkError(e)}
-                      validateFunction={(e) => inputValidate(e)}
-                    />
-                    <Form.Text className="textDanger">
-                      {credencialesError.emailError}
-                    </Form.Text>
-                    <Form.Group className="mb-3" controlId="basicPasswordControl">
+              <Form className="inForm">
+                <Form.Group
+                  className="mb-3 containerForms"
+                  controlId="basicEmailControl"
+                >
+                  <div className="containerIcon">
+                    <i className="bi bi-person-workspace loginIcon"></i>
+                  </div>
+                  <>
+                    <div className="inputsLogin">
                       <InputText
                         className={
                           credencialesError.passwordError === ""
                             ? "inputBasicDesign"
                             : "inputBasicDesign inputErrorDesign"
                         }
-                        type="password"
-                        name="password"
-                        placeholder="Contraseña"
+                        type={"email"}
+                        name={"email"}
+                        placeholder={"Email"}
                         required={true}
                         changeFunction={(e) => inputHandler(e)}
                         blurFunction={(e) => checkError(e)}
                         validateFunction={(e) => inputValidate(e)}
                       />
                       <Form.Text className="textDanger">
-                        {credencialesError.passwordError}
+                        {credencialesError.emailError}
                       </Form.Text>
-                    </Form.Group>
-                    <div className="btnContainer">
-                      <ButtonAct
-                        className={
-                          loginAct
-                            ? "loginSendDesign loginSendAct"
-                            : "loginSendDesign"
-                        }
-                        buttonName="Confirmar"
-                        onClick={loginAct ? logMe : () => {}}
-                      />
+                      <Form.Group
+                        className="mb-3"
+                        controlId="basicPasswordControl"
+                      >
+                        <InputText
+                          className={
+                            credencialesError.passwordError === ""
+                              ? "inputBasicDesign"
+                              : "inputBasicDesign inputErrorDesign"
+                          }
+                          type="password"
+                          name="password"
+                          placeholder="Contraseña"
+                          required={true}
+                          changeFunction={(e) => inputHandler(e)}
+                          blurFunction={(e) => checkError(e)}
+                          validateFunction={(e) => inputValidate(e)}
+                        />
+                        <Form.Text className="textDanger">
+                          {credencialesError.passwordError}
+                        </Form.Text>
+                      </Form.Group>
+                      <div className="btnContainer">
+                        <ButtonAct
+                          className={
+                            loginAct
+                              ? "loginSendDesign loginSendAct"
+                              : "loginSendDesign"
+                          }
+                          buttonName="Confirmar"
+                          onClick={loginAct ? logMe : () => {}}
+                        />
+                      </div>
                     </div>
-                  </div>
-                </>
-              </Form.Group>
-            </Form>
+                  </>
+                </Form.Group>
+              </Form>
             </div>
           </div>
         )}
