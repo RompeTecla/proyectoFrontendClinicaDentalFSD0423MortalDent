@@ -5,11 +5,12 @@ import { combineReducers } from 'redux';
 import { persistReducer } from 'redux-persist';
 import thunk from 'redux-thunk';
 import appointmentSlice from '../services/appointmentSlice';
+import detailSlice from '../services/detailSlice';
 
 const reducers = combineReducers({
     user: userSlice,
     appointment: appointmentSlice,
-    
+    details: detailSlice
 })
 
 const persistConfig = {
