@@ -39,5 +39,7 @@
 }
 
 @media (max-width: 500px) {
-  
+  .inputBasicDesign {
+    width: 18.5rem;
+  }
 }

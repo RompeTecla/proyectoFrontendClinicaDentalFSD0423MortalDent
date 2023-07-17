@@ -13,8 +13,8 @@
 
 .containerInt {
   padding: 0.5rem;
-  margin-bottom: 5rem;
-  margin-top: 4rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   flex: 1 0 33%;
   padding: 10px;
   display: flex;
@@ -135,5 +135,8 @@
 @media screen and (max-width: 767px) {
   .containerInt {
     flex-basis: 50%;
+  }
+  .contTreatment01 {
+    margin-left: 0;
   }
 }

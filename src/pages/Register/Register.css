@@ -118,9 +118,9 @@
   justify-content: center;
   align-items: center;
 }
-.inputBasicDesign{
+/* .inputBasicDesign{
   height: 2.5rem;
-}
+} */
 
 .containerBtn {
   position: relative;
@@ -140,13 +140,17 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   .allContainer {
     height: auto;
   }
 
   .rowInput {
     width: 20rem;
+  }
+
+  .inputBasicDesign {
+    width: 18.5rem;
   }
 
   .allContainerRegister {

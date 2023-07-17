@@ -38,7 +38,7 @@ export const Users = () => {
                     <div className="contTreatment01">
                       <div>
                         <div className="icon01">
-                          <i class="bi bi-person-bounding-box"></i>
+                          <i className="bi bi-person-bounding-box"></i>
                         </div>
                       </div>
                       

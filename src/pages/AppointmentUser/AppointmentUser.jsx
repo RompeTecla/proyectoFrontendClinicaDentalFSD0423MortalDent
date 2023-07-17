@@ -16,9 +16,8 @@ export const AppointmentsAsClient = () => {
   const credentialsRdx = useSelector(userData)
   console.log(credentialsRdx)
   const appoimentSelectedRdx = useSelector(appointmentData)
-  let params = appoimentSelectedRdx.choosenAppointment.id
-  console.log("hola soy params" + params);
-  
+  let params = appoimentSelectedRdx.choosenAppointment.id;
+  console.log(params)
   const dispatch = useDispatch();
   const navigate = useNavigate();
   
