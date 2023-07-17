@@ -215,7 +215,7 @@ export const Login = () => {
                         <ButtonAct
                           className={
                             loginAct
-                              ? "loginSendDesign loginSendAct"
+                              ? "loginSendDesign"
                               : "loginSendDesign"
                           }
                           buttonName="Confirmar"

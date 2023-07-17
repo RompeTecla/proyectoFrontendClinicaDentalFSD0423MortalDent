@@ -1,14 +1,24 @@
 .allContainer {
-  height: 33.5rem;
+  height: auto;
 }
-
+.yourProfileTitle {
+  color: rgba(140, 83, 206, 0.931);
+  text-shadow: 4px 4px 5px rgba(202, 167, 241, 0.719);
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 .allContainerRegister {
-  /* display: flex; */
+  display: flexbox;
   align-items: center;
-  /* box-sizing: border-box; */
   border: rgba(140, 83, 206, 0.932) solid 0.2rem;
   margin: auto;
   margin-top: 1rem;
+  margin-bottom: 2rem;
   border-radius: 2rem;
   width: 45rem;
   height: 31rem;
@@ -20,95 +30,53 @@
     5px 5px 5px 0px rgba(0, 0, 0, 0.75);
   overflow: hidden;
 }
-
 .containerRegister {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  width: auto;
-}
-
-.iconLogin {
-  font-size: 4rem;
-  color: rgba(140, 83, 206, 0.931);
-}
-
-.inputBasicDesign {
-  width: 15rem;
-  height: 2.5rem;
-  text-align: center;
-  margin-top: 0.5rem;
-}
-
-.rowInput {
-  width: 40rem;
-}
-
-.containerIcon {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem !important;
+  justify-content: inherit;
+  margin-bottom: 3rem;
+  min-height: 68vh;
+  margin: 0;
   padding: 0;
 }
-
-.btnLogin {
-  background-color: rgb(255, 255, 255);
-  border-color: rgba(140, 83, 206, 0.931);
+.dateConfirm {
+  color: rgb(133, 51, 228);
   font-family: "Exo", sans-serif;
-  width: 5rem;
-  margin-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 2rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
-
-.btnLogin:hover {
-  background-color: rgba(255, 255, 255, 0.74);
-  color: rgb(3, 45, 101);
-  font-family: "Exo", sans-serif;
-}
-
-.registerSendDeac {
+.loginSendDesign {
+  position: relative;
   color: #fff;
-  background-color: rgba(140, 83, 206, 0.931);
-  border-color: rgba(140, 83, 206, 0.931);
+  background-color: rgba(140, 83, 206, 0.932);
+  border: rgba(140, 83, 206, 0.932) solid 0.2rem;
   font-family: "Exo", sans-serif;
-  border-radius: 0.4rem;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  margin-top: 3rem;
-  line-height: 1.5;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
+  border-radius: 0.4rem; /* Agrega un borde redondeado */
+  padding: -0.5rem 1rem; /* Agrega un padding a los lados */
+  font-size: 1rem; /* Tamaño de fuente */
+  /* margin-top: 3r   em; */
+  line-height: 1.5; /* Altura de línea */
+  text-align: center; /* Alineación de texto */
+  text-decoration: none; /* Elimina la subraya del enlace si se aplica */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse sobre el botón */
   transition: all 0.15s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10rem;
-  transition: 0.5s;
+  width: 12rem;
 }
-
-.registerSendDeac:hover {
-  color: rgb(140, 83, 206);
-  background-color: rgba(226, 207, 247, 0.931);
-  border-color: rgba(226, 207, 247, 0.931);
-  transition: 0.5s;
-}
-
-.registerSendAct {
+.loginSendAct {
   cursor: pointer;
-  background-color: rgba(140, 83, 206, 0.931);
+  background-color: rgba(140, 83, 206, 0.932);
   width: 12rem;
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.registerSendAct:hover {
+.loginSendAct:hover {
   transition: 1s;
   background-color: rgba(255, 255, 255, 0.74);
   color: rgb(3, 45, 101);
@@ -118,29 +86,15 @@
   justify-content: center;
   align-items: center;
 }
-/* .inputBasicDesign{
-  height: 2.5rem;
-} */
-
-.containerBtn {
-  position: relative;
+.container-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 1rem;
 }
-.msgConfirm {
-  font-size: 3rem !important;
-  text-align: center;
-  margin-top: 3rem !important;
-}
-@media (max-width: 992px) {
-  .rowInput {
-    width: 28rem;
-  }
-}
-
 @media (max-width: 576px) {
+  .rowInput {
+    width: 20rem;
+  }
   .allContainer {
     height: auto;
   }

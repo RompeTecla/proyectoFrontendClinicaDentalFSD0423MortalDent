@@ -21,17 +21,19 @@
   width: 45rem;
   height: 22rem;
   box-shadow: 1px 1px 0px 0px hsla(268, 56%, 57%, 0.932),
-    2px 2px 0px 0px hsl(268, 56%, 56%, 0.932),
-    3px 3px 0px 0px hsl(268, 56%, 55%, 0.932),
-    4px 4px 0px 0px hsl(268, 56%, 54%, 0.932),
-    5px 5px 0px 0px hsl(268, 56%, 53%, 0.932),
-    5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  2px 2px 0px 0px hsl(268, 56%, 56%, 0.932),
+  3px 3px 0px 0px hsl(268, 56%, 55%, 0.932),
+  4px 4px 0px 0px hsl(268, 56%, 54%, 0.932),
+  5px 5px 0px 0px hsl(268, 56%, 53%, 0.932),
+  5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
 }
 .containerIcon {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem !important;
+  margin-bottom: 0rem !important;
   padding: 0;
+  
 }
 .loginIcon {
   font-size: 4rem;

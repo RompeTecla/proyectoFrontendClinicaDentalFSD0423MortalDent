@@ -60,7 +60,7 @@ export const NavBar = () => {
               <Navigator ruta={"Inicio"} destino={"/"} />
               <Navigator ruta={"Tratamientos"} destino={"/treatments"} />
               <div onClick={() => navigate("/appointments")}>Citas</div>
-              <div>
+              <div onClick={() => navigate("/data/user")}>
                 {datosCredencialesRedux?.credentials?.decodificado?.username}
               </div>
               <div
