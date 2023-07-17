@@ -8,6 +8,7 @@ import { Treatment } from './pages/Treatments/Treatments';
 import { Users } from './pages/Users/Users';
 import { Appointment } from './pages/Appointments/Appointments';
 import { AppointmentsAsClient } from "./pages/AppointmentUser/AppointmentUser";
+import { ProfileData } from './pages/DataUser/dataUser'
 
 
 export const App = () => {
@@ -21,6 +22,7 @@ export const App = () => {
         <Route path="/users" element={<Users/>}/>
         <Route path="/appointments" element={<Appointment/>}/>
         <Route path="/appointments/book" element={<AppointmentsAsClient/>}/>
+        <Route path="/data/user" element={<ProfileData/>}/>
       </Routes>
     </>
   )

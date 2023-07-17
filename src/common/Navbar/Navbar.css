@@ -89,7 +89,6 @@ body {
     gap: 0.8rem;
     display: flex;
     flex-direction: row;
-    /* margin-top: -2rem; */
     justify-content: center;
     align-items: center;
   }
