@@ -117,7 +117,6 @@ export const AppointmentsAsClient = () => {
                         <div className="line01">Duración:</div>{" "}
                         <div> {appointment.Treatment.duration}</div>
                       </div>
-
                       <div className="allButtons">
                         <div
                           onClick={() => deleteApp(appointment)}

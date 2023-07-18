@@ -10,6 +10,7 @@ import { Appointment } from './pages/Appointments/Appointments';
 import { AppointmentsAsClient } from "./pages/AppointmentUser/AppointmentUser";
 import { ProfileData } from './pages/DataUser/dataUser'
 import { ModifyUser } from './pages/ModifyDataUser/modifyDataUser'
+import { AppointmentsAsDentist } from './pages/AppointmentsDentist/AppointmentsDentist'
 
 
 export const App = () => {
@@ -25,6 +26,8 @@ export const App = () => {
         <Route path="/appointments/book" element={<AppointmentsAsClient/>}/>
         <Route path="/data/user" element={<ProfileData/>}/>
         <Route path="/modify/user" element={<ModifyUser/>}/>
+        <Route path="/appointments/dentist" element={<AppointmentsAsDentist/>}/>
+
       </Routes>
     </>
   )

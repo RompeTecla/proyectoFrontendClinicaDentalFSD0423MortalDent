@@ -65,18 +65,19 @@ export const Appointment = () => {
                       <div className="line01">NºPaciente:</div>
                       <div> {tag.pacient_id}</div>
                     </div>
-                    <div className="allButtons">
-                      <div
-                        onClick={() => navigate("/appointments/dentist")}
-                        className="deleteDesign delete01"
-                      >
-                        Mis citas
-                      </div>
-                    </div>
+                    <div className="allButtons"></div>
                   </div>
                 </div>
               </Col>
             ))}
+            <div className="appBtn">
+            <div
+              onClick={() => navigate("/appointments/dentist")}
+              className="myAppointmentsBtn"
+            >
+              Mis citas
+            </div>
+            </div>
           </Row>
         ) : (
           <div className="dateConfirm">CARGANDO...</div>
