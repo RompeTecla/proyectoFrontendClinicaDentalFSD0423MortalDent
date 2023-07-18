@@ -20,13 +20,14 @@ export const Appointment = () => {
     if (appointment.length === 0) {
       appointmentsAll(ReduxCredentials.credentials.token)
         .then((result) => {
-          console.log(result);
+          console.log("Datos de citas:", result.data);
           // Después de traer los usuarios de la base de datos, los guardamos en el hook
           setAppointment(result.data.citasActivas);
         })
         .catch((error) => console.log(error));
     }
   }, []);
+  console.log(ReduxCredentials.credentials.token);
 
   return (
     <>
@@ -49,7 +50,7 @@ export const Appointment = () => {
                       <div>{tag.date}</div>
                     </div>
                     <div className="treatmentLineCom">
-                      <div className="line01">Comentario:</div>
+                      <div className="line02">Comentario:</div>
                       <div> {tag.observations}</div>
                     </div>
                     <div className="treatmentLine">

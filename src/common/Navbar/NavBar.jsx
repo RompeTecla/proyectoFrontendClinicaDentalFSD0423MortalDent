@@ -50,7 +50,7 @@ export const NavBar = () => {
                   logoutFunction();
                 }}
               >
-                Cerrar sesión
+                Logout
               </div>
             </div>
           </>
@@ -69,7 +69,7 @@ export const NavBar = () => {
                   logoutFunction();
                 }}
               >
-                Cerrar sesión
+                Logout
               </div>
             </div>
           </>
@@ -88,7 +88,7 @@ export const NavBar = () => {
                   logoutFunction();
                 }}
               >
-                Cerrar sesión
+                Logout
               </div>
             </div>
           </>
